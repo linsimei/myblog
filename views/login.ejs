@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        登录
+    </title>
+    <link rel='stylesheet' href='/stylesheets/register&login.css' />
+</head>
+
+<body>
+
+
+
+    <form action="/account" method="post" enctype="multipart/form-data">
+        <p class="status"><a href="/account">注册</a>|<a class="on" href="/account/login">登录</a></p>
+        <div>
+            <input type="text" id="username" name="username" placeholder="用户名" />
+            <span class="username_tips"></span>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="密码" />
+            <span class="password_tips"></span>
+        </div>
+
+
+        <input type="button" id="submit" class="button" value="登录" />
+        <p class="clear">
+            <a class="login_err" href="">无法登录?</a>
+            <a class="homepage" href="/">>返回博客主页</a>
+        </p>
+
+    </form>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/login.js"></script>
+    <script src="/javascripts/register.js"></script>
+
+</body>
+
+</html>

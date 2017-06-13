@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px 0 20px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #299983;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#author {
+    height: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    text-indent: 2em;
+    margin-top: 20px;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    background: #299983 !important;
+    color: #fff !important;
+    cursor: pointer;
+    border-radius: 5px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#title {
+    width: 100%;
+    height: 12px;
+    border: 1px solid #ccc;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 10px 0;
+    line-height: 15px;
+}
+
+.content {
+    width: 400px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    text-indent: 2em;
+}
+
+#type {
+    height: 30px;
+    list-style: none;
+    margin: 50px 0 0 0;
+}
+
+form #type li {
+    float: left;
+    width: 150px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+form #type li.current {
+    background: #299983;
+    color: white;
+}
+
+form #child {
+    width: 150px;
+    display: none;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+form #child .selected_list {
+    margin-left: 0px;
+}
+
+form #child .selected_list span {
+    background: #ccc;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+}
+
+form #child .selected_list span.selectStyle {
+    background: #299983;
+    color: white;
+}
+
+form #child .selected_list div {
+    padding: 5px;
+}
+
+form #child .selected_list div.current,
+.selected_list div:hover {
+    background: #299983;
+    color: white;
+}
+
+.container .article {
+    margin: 10px auto;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.container .article .title {
+    color: #299983;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.container .article .info {
+    margin: 10px;
+}
+
+.container .article .manage .all_content {
+    display: block;
+    margin: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+.container .article .manage a {
+    text-decoration: none;
+    color: #299983;
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.container .article .manage a:hover {
+    background: #299983;
+    color: #fff;
+}

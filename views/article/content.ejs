@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>
+        博客列表
+    </title>
+    <link rel='stylesheet' href='/stylesheets/content.css' />
+    <link rel="stylesheet" href="/wangEditor/css/wangEditor.css">
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+        <div class="mainbody">
+
+            <div class="container">
+                <div class="article">
+                    <div class="title">
+                        <%= article.title %>
+                    </div>
+                    <div class="info"> <span>发布时间:
+                <%= article.submitTime.format('yyyy-MM-dd')  %>
+                  </span><span>作者:<%- article.author %></span> <span>浏览量：<%- article.views %></span>
+                    </div>
+                    <div id="content">
+                        <%- article.content %>
+                    </div>
+                </div>
+                <div id="share"></div>
+                <div class="article_comments">
+                    <textarea rows="" cols="" palcesholder="评论一下文章吧..."></textarea>
+                    <div class="face">
+
+                    </div>
+                    <input type="submit" name="" value="畅言一下">
+
+                </div>
+
+            </div>
+        </div>
+        <%- include ../footer.ejs %>
+</body>
+
+</html>
+
+<script>
+    $("#share").load("/html/share.html");
+</script>

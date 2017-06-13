@@ -1,0 +1,246 @@
+#mainbody {
+    margin: 0 auto;
+    color: white;
+    /*overflow: hidden;*/
+}
+
+
+/*清除浮动*/
+
+#mainbody .left {
+    margin: 10px auto;
+    float: left;
+    border-radius: 15px;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+#mainbody .baner {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #666666;
+    margin: 10px auto;
+}
+
+#mainbody .banner p {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid pink;
+    background: pink;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+}
+
+#mainbody .banner .photo {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#mainbody .banner .photo li {
+    width: 100%;
+    height: 400px;
+    filter: alpha(opacity=0);
+    display: none;
+}
+
+#mainbody .banner .photo li.current {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    display: block;
+}
+
+#mainbody .banner .photo li img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+#mainbody .banner .order {
+    position: absolute;
+    z-index: 9999;
+    right: 60px;
+    top: 340px;
+}
+
+#mainbody .banner .order li {
+    width: 12px;
+    height: 12px;
+    float: left;
+    border-radius: 50%;
+    background: white;
+    list-style: none;
+    margin: 10px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#mainbody .banner .order li.current {
+    background: red;
+}
+
+#mainbody .left .bloglist h2 {
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+    border: 1px solid pink;
+    background: pink;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+}
+
+
+/*#mainbody .left .bloglist h2 span {
+    color: #299983;
+    text-align: center;
+}*/
+
+#mainbody .left .bloglist h3 {
+    font-weight: bold;
+    color: #fff;
+    background: #299983;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+#mainbody .left .bloglist .blogs {
+    width: 100%;
+    /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #666666;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+#mainbody .left .bloglist .blogs:hover {
+    box-shadow: 1px 1px 1px 1px #299983;
+}
+
+#mainbody .left .bloglist .blogs .content {
+    height: 56px;
+    overflow: hidden;
+}
+
+.blogs .dateview {
+    width: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 35px 0px 35px 0px;
+    background: #299983;
+    color: #fff!important;
+    position: absolute;
+    left: -170px;
+    top: 15px;
+}
+
+#mainbody .left .bloglist .blogs:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: #299983;
+    position: absolute;
+    left: -9px;
+    top: 25px;
+}
+
+#mainbody .left .bloglist .blogs div {
+    text-indent: 2em;
+    padding: 5px;
+    margin: 15px;
+    text-align: left;
+    overflow: hidden;
+    color: #666666;
+}
+
+#mainbody .left .bloglist .blogs a {
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+}
+
+#mainbody .left .bloglist .blogs p {
+    background: #ccc;
+    margin: 10px 20px;
+    text-align: left;
+    text-indent: 2em;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.create {
+    width: 400px;
+    height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 50px auto;
+}
+
+.create input {
+    margin: 15px 200px 15px 15px;
+    float: right;
+}
+
+.create .button {
+    background: #4fc08d !important;
+    color: #fff !important;
+}
+
+.create a:hover {
+    border-bottom: 3px solid #4fc08d;
+}
+
+.create a {
+    color: #00B7FF;
+}
+
+.create h1 {
+    color: #4fc08d;
+    display: inline-block;
+    margin: 10px 0;
+}

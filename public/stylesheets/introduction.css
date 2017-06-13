@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#mainbody {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    /*overflow: hidden;*/
+}
+
+
+/*清除浮动*/
+
+#mainbody:after {
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+#mainbody .left {
+    width: 73%;
+    height: 600px;
+    margin: 10px auto;
+    float: left;
+    border-radius: 15px;
+    border: 1px solid #299983;
+    box-shadow: 1px 1px 1px 1px #299983;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+#mainbody .left h3 {
+    color: #299983;
+    font-size: 36px;
+    padding: 10px;
+    text-align: center;
+}
+
+#mainbody .left p {
+    text-indent: 2em;
+    font-size: 18px;
+    padding: 10px;
+    color: #666666;
+    text-align: center;
+}
+
+#mainbody .right {
+    width: 26%;
+    margin: 10px auto;
+    float: right;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 1px #AAAAAA;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+
+#mainbody .right .avatar img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+#mainbody .right p {
+    height: 80px;
+    line-height: 80px;
+    background: #299983;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#mainbody .right .info {
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    line-height: 40px;
+}
+
+#mainbody .right .info a {
+    color: #299983;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

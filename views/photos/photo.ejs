@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        博客列表
+    </title>
+
+    <link rel='stylesheet' href='/stylesheets/photo.css' />
+    <link rel="stylesheet" href="/stylesheets/commom.css">
+    <script src="/vuejs/vue.js"></script>
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+        <div id="mainbody">
+            <div class="top">
+                <h1>相册列表</h1>
+                <p class="sub_title">用相片定格回忆的点点滴滴</p>
+                <button type="button"><a class="upload" href="/photo/upload">上传图片</a></button>
+            </div>
+
+
+            <div class="wrap">
+                <div class="photo" v-for="photo in photos">
+                    <i>
+                        <img v-bind:src="photo.src" alt="" />
+                    </i>
+                    <p class='info'><span>{{photo.title}}</span><span>上传时间：{{photo.createTime}}</span></p>
+                </div>
+            </div>
+
+
+        </div>
+        <%- include ../footer.ejs %>
+
+</body>
+
+</html>
+<script src='/javascripts/photo.js'></script>

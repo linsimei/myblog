@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <link rel='stylesheet' href='/stylesheets/comment.css' />
+
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+        <div class="container">
+            <h2>留言板</h2>
+            <form class="MessageBoard" method="post" action="/comment">
+                <input type="text" name="name" placeholder="留言者" class="visitor" />
+                <textarea name="message" placeholder="给我留言吧..."></textarea>
+                <input type="submit" value="提交" class="button" />
+            </form>
+
+            <div class="wrap">
+                <div class="comments">
+                    <h3>留言(<span id="count"></span>)</h3>
+
+                </div>
+                <div id="comments_list">
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <%- include ../footer.ejs %>
+
+</body>
+
+</html>
+<script src="/javascripts/comment.js"></script>

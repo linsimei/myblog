@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        博客列表
+    </title>
+    <link rel='stylesheet' href='/stylesheets/article.css' />
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+        <div id="mainbody">
+
+            <div class="container">
+                <h1>文章列表</h1>
+
+                <div class="article" v-for="article in articles">
+                    <hr>
+                    <div class="title">标题:{{article.title}}</div>
+                    <div class="info">发布时间:{{article.submitTime}}</div>
+                    <div class="manage">
+                        <a class="all_content" v-bind:href="'/article/content?id='+article._id">查看全文>></a>
+                        <a v-bind:href="'/article/modify?id='+article._id">编辑</a>
+                        <a v-bind:href="'/article/delete?id='+article._id" onclick="return confirm('确定删除？')">删除</a>
+                        <a v-bind:href="'/article/recommend?id='+article._id">推荐至首页</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <%- include ../footer.ejs %>
+</body>
+
+</html>
+<script src="/javascripts/manage.js"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/article.css' />
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/wangEditor/js/wangEditor.min.js"></script>
+    <link rel="stylesheet" href="/wangEditor/css/wangEditor.css" />
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+
+        <form method="post" action="/article/create" class="create">
+
+            <ul id="type">
+
+            </ul>
+            <div id="child">
+                <div class="selected_list">
+                </div>
+            </div>
+
+
+
+
+            <input type="hidden" name="type" id="type_hidden" />
+            <input placeholder="作者" type="text" name="author" id="author" />
+            <input placeholder="文章标题" type="text" name="title" id="title" />
+            <textarea name="content" id="content" placeholder="输入文章内容"></textarea>
+            <script>
+                // 获取元素
+                var textarea = document.getElementById('content');
+                // 生成编辑器
+                var editor = new wangEditor(textarea);
+                editor.config.uploadImgUrl = '/files/upload';
+                editor.create();
+            </script>
+            <input type="submit" class="button" />
+        </form>
+        <%- include ../footer.ejs %>
+</body>
+
+</html>
+<script src="/javascripts/article.js"></script>

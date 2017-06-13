@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/admin.css' />
+    <script src="/javascripts/jquery.js"></script>
+</head>
+
+<body>
+    <%- include ../header.ejs %>
+        <div class="container">
+            <form method="post" action="/type/edit" class="create">
+                <input type="hidden" name="id" value="<%= type.id %>">
+                <div>
+                    <label for="">上级模块</label>
+                    <select name="parent" id="">
+                    <option value="">没有上级</option>
+                    <% for(var i=0;i<types.length;i++){ %>
+                        <% if(types[i].id==type.parent){ %>
+                        <option selected value="<%= types[i].id %>"><%= types[i].name %></option>
+                        <% } else { %>
+                        <option value="<%= types[i].id %>"><%= types[i].name %></option>
+                    <% }} %>
+                </select>
+                </div>
+
+                <div>
+                    <label>模块名称</label>
+                    <input type="text" name="name" placeholder="模块名称" value="<%= type.name %>" />
+                </div>
+
+                <input type="submit" class="button" />
+            </form>
+        </div>
+        <%- include ../footer.ejs %>
+</body>
+
+</html>
+<script src="/javascripts/article.js"></script>

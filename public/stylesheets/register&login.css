@@ -1,0 +1,89 @@
+     * {
+         margin: 0;
+         padding: 0;
+     }
+     
+     body {
+         margin: 0 auto;
+         background: #efedee;
+         font: 14px "Microsoft Yahei", Arial, Helvetica, sans-serif;
+     }
+     
+     form {
+         width: 320px;
+         background: #fff;
+         padding: 20px 10px;
+         margin: 150px auto;
+         position: relative;
+     }
+     
+     form .status {
+         font-size: 24px;
+         color: #AAAAAA;
+         font-weight: bold;
+         text-align: center;
+     }
+     
+     form .status a {
+         font-size: 24px;
+         color: #AAAAAA;
+         font-weight: bold;
+         padding: 10px;
+         text-decoration: none;
+         cursor: pointer;
+     }
+     
+     form .status a.on {
+         color: #299983;
+     }
+     
+     form div {
+         width: width;
+         margin: 20px auto;
+         text-align: center;
+     }
+     
+     form div input {
+         width: 300px;
+         height: 30px;
+         padding: 5px;
+     }
+     
+     form .button {
+         background: #299983;
+         width: 300px;
+         height: 30px;
+         line-height: 30px;
+         font-weight: bold;
+         color: #fff;
+         font-size: 20px;
+         border-radius: 5px;
+         cursor: pointer;
+         border: none;
+         margin-left: 9px;
+     }
+     
+     form p {
+         margin: 10px;
+     }
+     
+     form p .homepage {
+         color: #299983;
+         text-align: right;
+         float: right;
+     }
+     
+     form p .login_err {
+         color: #299983;
+         margin: 10px;
+         text-align: left;
+     }
+     
+     .clear:after {
+         content: "";
+         height: 0;
+         line-height: 0;
+         display: block;
+         clear: both;
+         visibility: hidden;
+     }
