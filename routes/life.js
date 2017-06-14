@@ -16,10 +16,11 @@ router.get('/', function(req, res, next) {
 
 router.get("/type", function(req, res, next) {
     type.findOne({ name: "生活" }, function(err, parent) {
-        type.find({ parent: parent._id }, function(err, children) {
+        if(parent){
+type.find({ parent: parent._id }, function(err, children) {
             res.json(children);
         });
-
+        }
     })
 })
 
