@@ -146,7 +146,8 @@
         float: left;
         cursor: pointer;
     }
-    .navbar-header li {
+    .navbar-header .active {
+        display: block;
         width: 120px;
         height: auto;
         border-radius: 5px;
@@ -169,8 +170,9 @@
         display: block;
         margin-left: 5px;
     }
-    li.on,
-    li.hover {
+    nav a.active,
+    li a.on,
+    li a.hover {
         font-weight: bold;
         background: #4fc08d;
         border-radius: 5px;
@@ -545,7 +547,7 @@
         background: #4A4A4A;
         border-radius: .05rem;
     }
-    /*header nav {
+    header nav {
         height: 0.3rem;
         background: #4A4A4A;
         margin: 0 auto;
@@ -584,12 +586,13 @@
         display: block;
         margin-left: 5px;
     }
+    li.active,
     li.on,
     li.hover {
         font-weight: bold;
         background: #4fc08d;
         border-radius: 5px;
-    }*/
+    }
     /*博客主页主体部分:*/
     #mainbody {
         position: relative;
