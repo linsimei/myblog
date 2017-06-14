@@ -25,7 +25,7 @@
     <div class="container">
         <%- include header.ejs %>
             <section class="row clear" id="mainbody">
-                <div class="col-lg-9 col-md-9 col-sm-12 pull-left">
+                <div class="col-lg-9 col-md-9 col-sm-12">
                     <div class="left clear">
                         <div class="banner">
                             <h3>最新照片</h3>
@@ -40,13 +40,13 @@
                                 <h4>{{blog.title}}</h4>
                                 <div class="content" v-html="blog.content"></div>
                                 <a v-bind:href="'/article/content?id='+blog._id">阅读全文》</a>
-                                <p> 作者:{{blog.author}} 浏览:({{blog.views}}) </p>
-                                <div class="dateview">{{new Date(blog.submitTime).format('yyyy-MM-dd')}}</div>
+                                <p><span>作者:{{blog.author}} </span> <span>浏览:({{blog.views}})</span> <span class="dateview">{{new Date(blog.submitTime).format('yyyy-MM-dd')}}</span> </p>
+                                <div class="a"></div>
                             </div>
                         </article>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3 ">
                     <%- include aside.ejs %>
                 </div>
             </section>
