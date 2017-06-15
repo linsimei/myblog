@@ -1,8 +1,8 @@
 function setNavStyle() {
     var pathname = window.location.pathname;
-    var lis = document.getElementsByTagName('nav')[0].getElementsByTagName('li');
+    var lis = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
     for (var i = 0; i < lis.length; i++) {
-        var href = lis[i].children[0].getAttribute("href");
+        var href = lis[i].getAttribute("href");
         if (href == pathname) {
             lis[i].className = "on";
         } else {
@@ -15,7 +15,7 @@ setNavStyle();
 
 (function() {
     var pathname = window.location.pathname;
-    var lis = document.getElementsByTagName('nav')[0].getElementsByTagName('li');
+    var lis = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
     for (var i = 0; i < lis.length; i++) {
         lis[i].onmouseover = function() {
             for (var i = 0; i < lis.length; i++) {
