@@ -2067,8 +2067,8 @@ pre code {
 .col-xs-9 {
     position: relative;
     min-height: 1px;
-    /*padding-right: 15px;
-    padding-left: 15px*/
+    padding-right: 10px;
+    padding-left: 10px
 }
 
 .col-xs-1,
@@ -5021,8 +5021,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 
 .navbar {
     position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
+    min-height: 30px;
+    /*margin-bottom: 20px;*/
     /*border: 1px solid transparent*/
 }
 

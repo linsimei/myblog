@@ -4,11 +4,16 @@
 }
 
 body {
+    font: 14px "Microsoft Yahei", Arial, Helvetica, sans-serif;
     background: #efedee;
+    font-size: 14px;
 }
 
 .container {
-    font: 14px "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    padding-right: 0.15rem;
+    padding-left: 0.15rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {

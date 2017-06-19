@@ -142,21 +142,15 @@
     }
     header nav a {
         display: block;
-        width: 120px;
+        min-width: 80px;
         border-radius: 5px;
         height: auto;
-        border-radius: 5px;
         float: left;
         cursor: pointer;
         text-decoration: none;
-    }
-    header nav a {
-        text-decoration: none;
-        color: white;
+        color: #fff;
         font-size: 18px;
         line-height: 50px;
-        display: block;
-        margin-left: 5px;
     }
     nav a.on,
     nav a.hover,
@@ -167,12 +161,11 @@
         border-radius: 5px;
         text-decoration: none;
     }
-    #mainbody {
+    .mainbody {
         margin: 10px auto;
     }
     /*博客主页主体部分:*/
     .left {
-        width: 98%;
         margin: 10px auto;
         float: left;
         border-radius: 15px;
@@ -469,27 +462,115 @@
     }
 }
 
+
+/*前端&生活版块*/
+
+.module {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.module li {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 30px 10px 0 45px;
+    border-radius: 3px;
+    background: #868584;
+    float: left;
+    cursor: pointer;
+}
+
+.module li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.module li:hover,
+.module li.currentStyle {
+    background: #299983;
+    font-weight: bold;
+}
+
+.left {
+    float: left;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left .blogs {
+    /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #666666;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.left .blogs:hover {
+    -webkit-box-shadow: 1px 1px 1px 1px #299983;
+}
+
+.container .left .blogs .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #299983;
+    cursor: pointer;
+}
+
+.container .left .blogs a {
+    text-decoration: none;
+}
+
+.left .blogs .content {
+    height: 60px;
+    margin: 10px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.container .left .blogs .info span {
+    margin: 10px;
+}
+
+.container .left .blogs .read_all {
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background: #299983;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
 @media screen and (min-width:120px) and (max-width:999px) {
     /*移动端样式*/
-    .a {
-        font-size: .14rem;
-    }
-    /*header {
-        height: 4rem;
-        padding: 0rem .2rem;
-        box-sizing: border-box;
-        font-size: .24rem;
-        border: .1rem solid #ccc;
-        border-radius: .5rem;
-    }*/
-    /*.avatar i {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-top: .8rem;
-        display: inline-block;
-    }*/
     /*头部样式*/
     header {
         width: 100%;
@@ -501,7 +582,7 @@
         position: relative;
     }
     header #header {
-        height: 2.8rem;
+        height: 2.9rem;
         background: #299983;
     }
     header #header .avatar i {
@@ -526,6 +607,7 @@
         font-size: .12rem;
         float: right;
         margin-right: .01rem;
+        margin-bottom: .01rem;
     }
     header #header .loginStatus a {
         color: #fff;
@@ -540,19 +622,28 @@
     header nav {
         /*background: #4A4A4A;*/
         margin: 0 auto;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+        height: .5rem;
     }
-    .navbar-header {
-        margin-top: .1rem;
+    #container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: inline-block;
+    }
+    .collapse {
+        padding-left: 0;
+        padding-right: 0;
+        display: inline-block;
+    }
+    .navbar-header,
+    .navbar {
         background: #4A4A4A;
     }
     .navbar-header a {
         line-height: .5rem;
         padding: .1rem;
         float: left;
-        height: .5rem;
+        height: auto;
         width: 1.2rem;
         color: #fff !important;
     }
@@ -572,6 +663,8 @@
         margin: 0 auto;
         background: #4A4A4A;
         position: absolute;
+        left: 0;
+        top: 50;
         z-index: 9999;
     }
     /*header nav li {
@@ -611,19 +704,15 @@
         text-decoration: none;
     }
     /*博客主页主体部分:*/
-    #mainbody {
+    .mainbody {
         position: relative;
-        padding-right: 0.1rem;
-        padding-left: 0.1rem;
-        margin-right: auto;
-        margin-left: auto;
         width: 100%;
     }
     .left {
-        width: 98%;
+        /*width: 98%;*/
         /*float: left;*/
         border-radius: .15rem;
-        margin-top: .5rem;
+        margin-top: .3rem;
         /*animation-duration: 1s;
         animation-fill-mode: both;
         animation-name: fadeInLeft;*/
@@ -636,7 +725,7 @@
     .banner h3 {
         width: 1.2rem;
         height: .4rem;
-        font-size: .18rem;
+        font-size: 0.24rem;
         line-height: .4rem;
         margin-left: 0;
         margin-top: .1rem;
@@ -700,7 +789,7 @@
     .left .bloglist h3 {
         width: 1.2rem;
         height: 0.3rem;
-        font-size: 0.18rem;
+        font-size: 0.24rem;
         line-height: 0.3rem;
         margin-bottom: 0;
         margin-left: .1rem;
@@ -714,9 +803,13 @@
         text-align: center;
     }
     */
+    .container-fluid .navbar-header a {
+        height: 50px;
+    }
     .left .bloglist h4 {
         font-weight: bold;
         color: #fff;
+        font-size: 0.18rem;
         background: #299983;
         display: inline-block;
         padding: .05rem .1rem;
@@ -740,10 +833,8 @@
         box-shadow: .01rem .01rem .01rem .01rem #299983;
     }
     .left .bloglist .blogs .content {
-        height: 1.6rem;
-        overflow: hidden;
-    }
-    .left .bloglist .blogs div {
+        font-size: 0.18rem;
+        height: 1.44rem;
         text-indent: 2em;
         margin: .01rem .15rem;
         text-align: left;
@@ -753,6 +844,7 @@
     }
     .left .bloglist .blogs a {
         display: block;
+        font-size: 0.18rem;
         padding: .05rem .1rem;
         background: pink;
         color: white;
@@ -769,31 +861,22 @@
         text-indent: 2em;
         padding: .05rem;
         margin-top: .8rem;
+        font-size: 0.18rem;
     }
     .left .bloglist .blogs p span {
         margin-right: .8rem;
-    }
-    @keyframes fadeInLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
     }
     .right {
         display: none;
     }
     .right #search {
         width: 100%;
-        display: block important;
+        display: block !important;
         padding-bottom: .25rem;
         text-align: center;
         margin-bottom: .1rem;
         padding: .05rem;
-        position: position;
+        position: absolute;
         top: 0;
         left: 0;
     }
@@ -811,5 +894,95 @@
         padding: .05rem;
         margin: .15rem .05rem;
         text-align: left;
+    }
+    /*前端&生活版块移动端样式*/
+    .module {
+        width: 100%;
+        margin: .2rem auto;
+    }
+    .module li {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        text-align: center;
+        background: #868584;
+        float: left;
+        cursor: pointer;
+    }
+    .module li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+    .module li:hover,
+    .module li.currentStyle {
+        background: #299983;
+        font-weight: bold;
+    }
+    .left {
+        float: left;
+        position: relative;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+    }
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .left .blogs {
+        /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
+        border-radius: 15px;
+        text-align: left;
+        padding: 20px 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color: #666666;
+        background: #fff;
+        position: relative;
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+    .left .blogs:hover {
+        -webkit-box-shadow: 1px 1px 1px 1px #299983;
+    }
+    .container .left .blogs .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #299983;
+        cursor: pointer;
+    }
+    .container .left .blogs a {
+        text-decoration: none;
+    }
+    .left .blogs .content {
+        height: 60px;
+        margin: 10px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        text-align: left;
+    }
+    .container .left .blogs .info span {
+        margin: 10px;
+    }
+    .container .left .blogs .read_all {
+        display: block;
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        background: #299983;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
     }
 }

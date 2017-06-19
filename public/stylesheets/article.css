@@ -131,8 +131,9 @@ form #child .selected_list div.current,
 .container .article {
     margin: 10px auto;
     width: 30%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    border-top: 2px solid #ccc;
 }
 
 .container .article .title {

@@ -30,13 +30,6 @@ var article_life = function() {
         };
         $(".life").html(str2);
     });
-
-
-
-
-
-
-
 };
 $(function() {
     article_life();

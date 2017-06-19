@@ -2,24 +2,42 @@
 <html>
 
 <head>
-    <title>
-        博客列表
-    </title>
 
-    <link rel='stylesheet' href='/stylesheets/web.css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>
+        有关生活
+    </title>
+    <script src="/javascripts/jquery.js"></script>
     <script src="/vuejs/vue.js"></script>
+    <script src="/javascripts/life.js"></script>
+    <link rel='stylesheet' href='/stylesheets/web.css' />
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+    <!--<link rel='stylesheet' href='/stylesheets/style.css' />-->
+    <script src="/javascripts/jquery-1.10.2.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/aside.js"></script>
+
+
 
 </head>
 
 <body>
+    <div class="container"> </div>
     <%- include ../header.ejs %>
-
-        <div id="mainbody"> 
-           <ul class="module">
-                <li v-for="type in types" v-on:click="type_click(type._id)" v-bind:class="{ active: type._id === currentType }" ><a href="javacript:;">{{type.name}}</a></li>
-            </ul> 
-             <div class="container">
-            <article class="left">
+        <div class="mainbody clear">
+            <ul class="module  clear">
+                <li v-for="type in types" v-on:click="type_click(type._id)" v-bind:class="{ active: type._id === currentType }"><a href="javacript:;">{{type.name}}</a></li>
+            </ul>
+            <div class="row">
+                <article class="col-lg-9 col-md-9 col-sm-12 left">
                     <div class="blogs" v-for="article in articles">
                         <a v-bind:href="'/article/content?id='+article._id">
                             <h3 class="title">
@@ -27,47 +45,23 @@
                             </h3>
                         </a>
                         <div class="info">
-                            <span>发布时间:{{article.submitTime}}</span>
-                            <span>作者:林思梅</span>
-                            <span>分类:[前端/Javascript/jQuery]</span>
+                            <span>发布时间:{{new Date(article.submitTime).format('yyyy-MM-dd')}}</span>
+                            <span>作者:{{article.author}}</span>
+                            <span>分类:[]</span>
 
                         </div>
-                        <div id="content" v-html="article.content">
+                        <div class="content" v-html="article.content">
                         </div>
                         <a class="read_all" v-bind:href="'/article/content?id='+article._id">阅读全文>></a>
-                    </div>
-            </article>
-            <aside class="right">
-                <div class="search">
-                    <h3>搜索</h3>
-                    <input type="text" placeholder="输入查找的内容" name="search" value=""> <input type="button" name="search" value="站内查询" class="button">
-                </div>
-                <div class="article_tag ">
-                    <h3>标签</h3>
-                    <div class="blank"></div>
-                </div>
-                <div class="recent_article">
-                    <h3>近期文章</h3>
-                    <div class="blank"></div>
-                </div>
-                <div class="article_save">
-                    <h3>文章归档</h3>
-                    <div class="blank">
-                    </div>
-                </div>
-                <div class="recent_comments">
-                    <h3>近期评论</h3>
-                    <div class="blank"></div>
-                </div>
-            </aside>
 
-
+                    </div>
+                </article>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <%- include ../aside.ejs %>
+                </div>
+            </div>
         </div>
-        </div>
-       
         <%- include ../footer.ejs %>
 </body>
 
 </html>
-
-<script src="/javascripts/life.js"></script>
