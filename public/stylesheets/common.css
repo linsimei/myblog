@@ -83,10 +83,17 @@ body {
 }
 
 .container {
-    padding-right: 0.15rem;
-    padding-left: 0.15rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+.mainbody .col-lg-9,
+.mainbody .col-md-9,
+.mainbody .col-sm-12,
+.mainbody .col-lg-3,
+.mainbody .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 a {

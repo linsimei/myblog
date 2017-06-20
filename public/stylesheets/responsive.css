@@ -622,7 +622,6 @@
     header nav {
         /*background: #4A4A4A;*/
         margin: 0 auto;
-        height: .5rem;
     }
     #container-fluid {
         padding-left: 15px;
@@ -660,20 +659,17 @@
         border-radius: .04rem;
     }
     header nav ul {
-        margin: 0 auto;
         background: #4A4A4A;
         position: absolute;
         left: 0;
-        top: 50;
         z-index: 9999;
     }
-    /*header nav li {
-        height: auto;
-        border-radius: .05rem;
-        cursor: pointer;
-        text-decoration: none;
-        color: #fff;
-    }*/
+    .collapse .navbar-nav {
+        margin: 0;
+    }
+    header nav li {
+        width: 100%;
+    }
     /*.navbar-brand {
         width: 1.2rem;
         border-radius: .05rem;
@@ -896,6 +892,10 @@
         text-align: left;
     }
     /*前端&生活版块移动端样式*/
+    .mainbody {
+        position: relative;
+        margin: 0 auto;
+    }
     .module {
         width: 100%;
         margin: .2rem auto;
@@ -921,40 +921,26 @@
     }
     .left {
         float: left;
-        position: relative;
-        animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-name: fadeInLeft;
-    }
-    @keyframes fadeInLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        margin: 0 auto;
     }
     .left .blogs {
         /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
-        border-radius: 15px;
+        border-radius: .15rem;
         text-align: left;
-        padding: 20px 10px;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: .2rem;
         color: #666666;
         background: #fff;
         position: relative;
-        box-shadow: 1px 1px 1px 1px #ccc;
+        box-shadow: .1rem .1rem .1rem .1rem #ccc;
     }
     .left .blogs:hover {
-        -webkit-box-shadow: 1px 1px 1px 1px #299983;
+        -webkit-box-shadow: .1rem .1rem .1rem .1rem #299983;
     }
     .container .left .blogs .title {
-        font-size: 20px;
+        font-size: .2rem;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: .2rem;
         color: #299983;
         cursor: pointer;
     }
@@ -962,27 +948,27 @@
         text-decoration: none;
     }
     .left .blogs .content {
-        height: 60px;
-        margin: 10px;
-        margin-bottom: 50px;
+        height: .6rem;
+        margin: .1rem;
+        margin-bottom: .5rem;
         overflow: hidden;
         text-align: left;
     }
     .container .left .blogs .info span {
-        margin: 10px;
+        margin: .1rem;
     }
     .container .left .blogs .read_all {
         display: block;
-        width: 100px;
-        height: 35px;
-        line-height: 35px;
+        width: 1rem;
+        height: .35rem;
+        line-height: .35rem;
         background: #299983;
         color: white;
         cursor: pointer;
         text-align: center;
         text-decoration: none;
         position: absolute;
-        right: 20px;
-        bottom: 10px;
+        right: .2rem;
+        bottom: .1rem;
     }
 }

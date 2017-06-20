@@ -29,3 +29,15 @@ setNavStyle();
         }
     }
 })()
+/*移动端导航菜单的显示隐藏*/
+var toggle_button = document.getElementsByClassName("navbar-toggle")[0];
+var items_list = document.getElementsByClassName('collapse')[0].getElementsByTagName('ul')[0];
+var items = document.getElementsByClassName('navbar')[0].getElementsByTagName('a');
+toggle_button.onclick = function() {
+    items_list.style.display == items_list.style.display ? "block" : "none;"
+}
+for (var i = 0; i < items.length; i++) {
+    items.onclick = function() {
+        items.style.display == "none;"
+    }
+}
