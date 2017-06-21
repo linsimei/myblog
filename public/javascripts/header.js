@@ -41,7 +41,7 @@ $(function() {
         //     }
         // }
 
-    //setNavStyle();
+    setNavStyle();
 
 
 })

@@ -168,6 +168,8 @@
     .left {
         margin: 10px auto;
         float: left;
+        width: 98%;
+        /*margin-right: 15px;*/
         border-radius: 15px;
         position: relative;
         animation-duration: 1s;
@@ -281,7 +283,7 @@
         text-align: left;
         padding: 10px 0;
         margin: 0 auto;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         color: #666666;
         background: #fff;
         position: relative;
@@ -308,6 +310,7 @@
         position: absolute;
         left: -150px;
         top: 30px;
+        display: none;
     }
     .left .bloglist .blogs:before {
         content: "";
@@ -470,7 +473,7 @@
         height: 40px;
         line-height: 40px;
         text-align: center;
-        margin: 30px 10px 0 45px;
+        margin: 30px 10px 0 60px;
         border-radius: 3px;
         background: #868584;
         float: left;
@@ -482,18 +485,20 @@
         display: block;
     }
     .module li:hover,
-    .module li.currentStyle {
+    .module li.active {
         background: #299983;
         font-weight: bold;
     }
-    .left {
+    /*.left {
         float: left;
+        border-radius: 15px;
+        margin-right: 15px;
         position: relative;
         animation-duration: 1s;
         animation-fill-mode: both;
         animation-name: fadeInLeft;
-    }
-    @keyframes fadeInLeft {
+    }*/
+    /*@keyframes fadeInLeft {
         0% {
             opacity: 0;
             transform: translateX(-20px);
@@ -502,7 +507,7 @@
             opacity: 1;
             transform: translateX(0);
         }
-    }
+    }*/
     .left .blogs {
         /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
         border-radius: 15px;
@@ -691,13 +696,10 @@
         width: 100%;
     }
     .left {
-        /*width: 98%;*/
-        /*float: left;*/
+        width: 98%;
+        margin: 0 auto;
         border-radius: .15rem;
         margin-top: .3rem;
-        /*animation-duration: 1s;
-        animation-fill-mode: both;
-        animation-name: fadeInLeft;*/
     }
     .baner {
         border-radius: .05rem;
@@ -707,7 +709,7 @@
     .banner h3 {
         width: 1.2rem;
         height: .4rem;
-        font-size: 0.24rem;
+        font-size: 0.28rem;
         line-height: .4rem;
         margin-left: 0;
         margin-top: .1rem;
@@ -771,7 +773,7 @@
     .left .bloglist h3 {
         width: 1.2rem;
         height: 0.3rem;
-        font-size: 0.24rem;
+        font-size: 0.28rem;
         line-height: 0.3rem;
         margin-bottom: 0;
         margin-left: .1rem;
@@ -786,12 +788,12 @@
     }
     */
     .container-fluid .navbar-header a {
-        height: 50px;
+        height: 30px;
     }
     .left .bloglist h4 {
         font-weight: bold;
         color: #fff;
-        font-size: 0.18rem;
+        font-size: 0.24rem;
         background: #299983;
         display: inline-block;
         padding: .05rem .1rem;
@@ -800,12 +802,11 @@
     }
     .left .bloglist .blogs {
         width: 100%;
-        /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
         border-radius: .15rem;
         text-align: left;
         padding: .1rem 0;
         margin: 0 auto;
-        margin-bottom: .15rem;
+        margin-bottom: .3rem;
         color: #666666;
         background: #fff;
         position: relative;
@@ -815,7 +816,7 @@
         box-shadow: .01rem .01rem .01rem .01rem #299983;
     }
     .left .bloglist .blogs .content {
-        font-size: 0.18rem;
+        font-size: 0.24rem;
         height: 1.44rem;
         text-indent: 2em;
         margin: .01rem .15rem;
@@ -826,7 +827,7 @@
     }
     .left .bloglist .blogs a {
         display: block;
-        font-size: 0.18rem;
+        font-size: 0.24rem;
         padding: .05rem .1rem;
         background: pink;
         color: white;
@@ -843,7 +844,7 @@
         text-indent: 2em;
         padding: .05rem;
         margin-top: .8rem;
-        font-size: 0.18rem;
+        font-size: 0.24rem;
     }
     .left .bloglist .blogs p span {
         margin-right: .8rem;
@@ -880,15 +881,17 @@
     /*前端&生活版块移动端样式*/
     .mainbody {
         position: relative;
-        margin: 0 auto;
+        margin: .3rem auto;
     }
     .module {
         width: 100%;
-        margin: .2rem auto;
+        margin: .2rem .9rem;
     }
     .module li {
         width: 1.2rem;
         height: 1.2rem;
+        margin-right: 1rem;
+        margin-bottom: .4rem;
         border-radius: 50%;
         text-align: center;
         background: #868584;
@@ -896,23 +899,25 @@
         cursor: pointer;
     }
     .module li a {
-        color: #fff;
+        color: #299983;
+        font-weight: 700;
+        font-size: .18rem;
+        text-align: middle;
         text-decoration: none;
         display: block;
+        margin-top: 1.2rem;
+        margin-left: -.4rem;
     }
     .module li:hover,
-    .module li.currentStyle {
+    .module li.active {
         background: #299983;
         font-weight: bold;
-    }
-    .left {
-        float: left;
-        margin: 0 auto;
     }
     .left .blogs {
         /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
         border-radius: .15rem;
         text-align: left;
+        padding: .1rem .5rem;
         margin: 0 auto;
         margin-bottom: .2rem;
         color: #666666;
@@ -924,18 +929,21 @@
         -webkit-box-shadow: .1rem .1rem .1rem .1rem #299983;
     }
     .container .left .blogs .title {
-        font-size: .2rem;
-        font-weight: bold;
+        font-size: .32rem;
+        font-weight: 700;
         margin-bottom: .2rem;
+        margin-top: .2rem;
+        margin-left: -.2rem;
         color: #299983;
+        display: inline-block;
         cursor: pointer;
     }
     .container .left .blogs a {
         text-decoration: none;
     }
     .left .blogs .content {
-        height: .6rem;
-        margin: .1rem;
+        height: .8rem;
+        margin: .15rem;
         margin-bottom: .5rem;
         overflow: hidden;
         text-align: left;
@@ -945,7 +953,7 @@
     }
     .container .left .blogs .read_all {
         display: block;
-        width: 1rem;
+        width: 1.4rem;
         height: .35rem;
         line-height: .35rem;
         background: #299983;
@@ -954,7 +962,8 @@
         text-align: center;
         text-decoration: none;
         position: absolute;
-        right: .2rem;
-        bottom: .1rem;
+        right: .3rem;
+        bottom: .2rem;
+        font-size: .24rem;
     }
 }

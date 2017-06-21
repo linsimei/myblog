@@ -10,11 +10,12 @@ $(function() {
 
             type_click: function(id) {
                 vue.currentType = id;
+                console.log(id);
                 $.get("/life/get_articles", { id: id }, function(data) {
                     vue.articles = data;
-
                 })
             }
+
         },
         computed: {
             getTypes: function() {
