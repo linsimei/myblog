@@ -1,0 +1,450 @@
+/*头部样式*/
+
+header {
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+}
+
+header #header {
+    width: 100%;
+    height: 280px;
+    background: #299983;
+}
+
+header #header .avatar i {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+header #header .avatar img {
+    width: 100%;
+    /*max-width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 25px;*/
+    border-radius: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+header #header h1 {
+    font-size: 40px;
+    letter-spacing: 15px;
+    color: #fff;
+    margin: 5px;
+}
+
+header #header p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+header #header .loginStatus {
+    font-size: 14px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+header #header .loginStatus a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header .loginStatus a:hover {
+    font-weight: bold;
+    background: #4A4A4A;
+    border-radius: 5px;
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    background: #4A4A4A;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+header nav ul {
+    margin: 0 auto;
+}
+
+header nav a {
+    display: block;
+    min-width: 80px;
+    border-radius: 5px;
+    height: auto;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+nav a.on,
+nav a.hover,
+nav a:focus {
+    color: #fff;
+    font-weight: bold;
+    background: #4fc08d;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.mainbody {
+    margin: 10px auto;
+}
+
+
+/*博客主页主体部分:*/
+
+.left {
+    margin: 10px auto;
+    float: left;
+    border-radius: 15px;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+.baner {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #666666;
+    margin: 10px auto;
+}
+
+.banner h3 {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-left: 0;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid pink !important;
+    background: pink !important;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.banner .photo {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner .photo li {
+    width: 100%;
+    height: 400px;
+    filter: alpha(opacity=0);
+    display: none;
+}
+
+.banner .photo li.current {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    display: block;
+}
+
+.avatar i {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.banner .photo li img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.banner .order {
+    position: absolute;
+    z-index: 998;
+    right: 60px;
+    top: 340px;
+}
+
+.banner .order li {
+    width: 12px;
+    height: 12px;
+    float: left;
+    border-radius: 50%;
+    background: white;
+    list-style: none;
+    margin: 10px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.banner .order li.current {
+    background: red;
+}
+
+.left .bloglist h3 {
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    background: pink;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* .left .bloglist h3 span {
+        color: #299983;
+        text-align: center;
+    }
+    */
+
+.left .bloglist h4 {
+    font-weight: bold;
+    color: #fff;
+    background: #299983;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.left .bloglist .blogs {
+    width: 100%;
+    /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
+    border-radius: 15px;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #666666;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.left .bloglist .blogs:hover {
+    box-shadow: 1px 1px 1px 1px #299983;
+}
+
+.left .bloglist .blogs .content {
+    height: 56px;
+    overflow: hidden;
+}
+
+.blogs .dateview {
+    display: block;
+    width: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    z-index: 1;
+    padding: 5px 0;
+    border-radius: 35px 0px 35px 0px;
+    background: #299983;
+    color: #fff!important;
+    position: absolute;
+    left: -150px;
+    top: 30px;
+}
+
+.left .bloglist .blogs:before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: #299983;
+    position: absolute;
+    left: -7px;
+    top: 28px;
+}
+
+.left .bloglist .blogs div {
+    text-indent: 2em;
+    margin: 10px 15px;
+    text-align: left;
+    overflow: hidden;
+    color: #666666;
+}
+
+.left .bloglist .blogs a {
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    background: pink;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+}
+
+.left .bloglist .blogs p {
+    background: #ccc;
+    margin: 10px 20px;
+    text-align: left;
+    text-indent: 2em;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.left .bloglist .blogs p span {
+    margin-right: 100px;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/*主页右侧边栏样式*/
+
+.right {
+    margin: 10px auto;
+    float: right;
+    color: #fff;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.right #search,
+.right p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.right #search {
+    padding-bottom: 25px;
+}
+
+.right .wrapper input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+.right .wrapper .button {
+    background: #299983;
+    padding: 0 5px;
+}
+
+.right .wrapper h4 {
+    background: #299983;
+    text-indent: 2em;
+    padding: 5px;
+    margin: 15px 5px;
+    text-align: left;
+}
+
+.right .avatar img {
+    border-radius: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.right .motto {
+    background: #299983;
+    font-size: 18px;
+    letter-spacing: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.right .wrapper ul,
+ol {
+    color: #666666;
+    margin-left: 30px;
+    list-style-type: disc !important;
+}
+
+.right .wrapper ul,
+ol li {
+    color: #666666;
+    line-height: 28px;
+}
+
+.right .wrapper ol li a {
+    color: #666666;
+}
+
+.right .wrapper ul li a {
+    color: #666666;
+}
+
+.right .wrapper ul li a:hover {
+    background: #299983;
+    color: #fff;
+}
+
+.right .wrapper ol li a:hover {
+    color: #299983;
+}
+
+.right .wrapper .types .web,
+.life {
+    margin-top: 10px;
+    color: #666666;
+}
+
+.right .wrapper {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background: #fff !important;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.right .row {
+    margin-bottom: 10px;
+}
+
+.right .wrapper:hover {
+    box-shadow: 1px 1px 1px 1px #299983;
+}
