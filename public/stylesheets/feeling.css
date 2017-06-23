@@ -3,8 +3,7 @@
         padding: 0;
     }
     
-    h1 {
-        width: 1200px;
+    h3 {
         margin: 40px auto;
         color: #299983;
         text-align: center;
@@ -17,14 +16,20 @@
         font-size: 16px;
     }
     
-    .container {
+    hr {
+        color: 666666;
+        height: 1px;
+        border: 1px;
+    }
+    
+    .wrap {
         width: 80%;
         margin: 0 auto;
         margin-left: 280px;
         border-left: 3px solid #666666;
     }
     
-    .container {
+    .blogs {
         -moz-animation: rotate 0.5s linear;
         -webkit-animation: rotate 0.5s linear;
         animation: rotate 0.5s linear;
@@ -57,7 +62,7 @@
         }
     }
     
-    .container .blogs {
+    .blogs {
         width: 65%;
         -webkit-box-shadow: 1px 1px 1px 1px #299983;
         border-radius: 15px;
@@ -72,12 +77,12 @@
         background: #fff;
     }
     
-    .container .blogs p {
+    .blogs p {
         line-height: 30px;
         padding: 10px 0px;
     }
     
-    .container .blogs .triangle-left:before {
+    .blogs .triangle-left:before {
         content: "";
         width: 10px;
         height: 10px;
@@ -89,7 +94,7 @@
         top: -4px;
     }
     
-    .container .blogs .dateview {
+    .blogs .dateview {
         width: 120px;
         padding: 10px 15px;
         font-weight: bold;
@@ -103,21 +108,21 @@
         top: 34px;
     }
     
-    .container .blogs .dateview .hoverStyle {
+    .blogs .dateview .hoverStyle {
         background: #fff;
         color: #299983;
     }
     
-    .container .blogs .title {
+    .blogs .title {
         font-size: 20px;
         font-weight: bold;
     }
     
-    .container .content {
+    r .content {
         font-size: 18px;
     }
     
-    .container .triangle-left {
+    .triangle-left {
         width: 0;
         height: 0;
         border-top: 20px solid transparent;

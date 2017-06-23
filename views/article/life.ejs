@@ -21,8 +21,6 @@
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/common.css' />
     <!--<link rel='stylesheet' href='/stylesheets/style.css' />-->
-    <script src="/javascripts/jquery-1.10.2.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
     <script src="/javascripts/aside.js"></script>
 
 
@@ -30,41 +28,43 @@
 </head>
 
 <body>
-    <div class="container"> </div>
-    <%- include ../header.ejs %>
-        <div class="mainbody clear">
-            <ul class="module  clear">
-                <li v-for="type in types" v-on:click="type_click(type._id)" v-bind:data-id='type._id' v-bind:class="{ active: type._id === currentType }"><a href="javacript:;">{{type.name}}</a></li>
-            </ul>
-            <div class="row">
-                <article class="col-lg-9 col-md-9 col-sm-12 ">
-                    <div class="left">
-                        <div class="blogs" v-for="article in articles">
-                            <a v-bind:href="'/article/content?id='+article._id">
-                                <h3 class="title">
-                                    {{article.title}}
-                                </h3>
-                            </a>
-                            <div class="info">
-                                <span>发布时间:{{new Date(article.submitTime).format('yyyy-MM-dd')}}</span>
-                                <span>作者:{{article.author}}</span>
-                                <span>分类:[]</span>
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="mainbody clear">
+                <ul class="module  clear">
+                    <li v-for="type in types" v-on:click="type_click(type._id)" v-bind:data-id='type._id' v-bind:class="{ active: type._id === currentType }"><a href="javacript:;">{{type.name}}</a></li>
+                </ul>
+                <div class="row">
+                    <article class="col-lg-9 col-md-9 col-sm-12 ">
+                        <div class="left">
+                            <div class="blogs" v-for="article in articles">
+                                <a v-bind:href="'/article/content?id='+article._id">
+                                    <h3 class="title">
+                                        {{article.title}}
+                                    </h3>
+                                </a>
+                                <div class="info">
+                                    <span>发布时间:{{new Date(article.submitTime).format('yyyy-MM-dd')}}</span>
+                                    <span>作者:{{article.author}}</span>
+                                    <span>分类:[]</span>
+
+                                </div>
+                                <div class="content" v-html="article.content">
+                                </div>
+                                <a class="read_all" v-bind:href="'/article/content?id='+article._id">阅读全文>></a>
 
                             </div>
-                            <div class="content" v-html="article.content">
-                            </div>
-                            <a class="read_all" v-bind:href="'/article/content?id='+article._id">阅读全文>></a>
-
                         </div>
-                    </div>
 
-                </article>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <%- include ../aside.ejs %>
+                    </article>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <%- include ../aside.ejs %>
+                    </div>
                 </div>
             </div>
-        </div>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
+
 </body>
 
 </html>

@@ -108,11 +108,27 @@ $(function() {
         recent_Photos();
     })
     /*推荐文章时间显示与隐藏与透明度效果：*/
+    // $(function() {
+    //     $('.blogs').mouseenter(function() {
+    //         $(this).$(".dateView").fadeIn(30);
+    //     });
+    //     $('.blogs').mouseleave(function() {
+    //         $(this).$(".dateView").fadeout(30);
+    //     });
+    // })
 $(function() {
-    $('.blogs').mouseenter(function() {
-        $(this).$(".dateView").fadeIn(30);
-    });
-    $('.blogs').mouseleave(function() {
-        $(this).$(".dateView").fadeout(30);
-    });
+    var blogs = document.getElementsByClassName("blogs");
+    var dateview = document.getElementsByClassName("dateview");
+    for (var i = 0; i < blogs.length; i++) {
+        blogs[i].onmouseover = function() {
+            blogs[i].index = i;
+            for (var i = 0; i < dateview.length; i++) {
+                dateview[i].style.display = "none";
+            }
+            dateview[this.index].style.display = "block";
+        }
+        blogs[i].onmouseout = function() {
+            dateview[i].style.display = "none";
+        }
+    }
 })

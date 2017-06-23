@@ -108,8 +108,7 @@ router.get("/recommend", function(req, res, next) {
         saveitem.recommend = !saveitem.recommend;
 
         saveitem.save(function(err, saveitem) {
-            saveitem.sort((a, b) => a.submitTime < b.submitTime)
-            console.log(saveitem);
+
             res.redirect("/manage");
         })
     })

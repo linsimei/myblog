@@ -2,38 +2,61 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
-        博客列表
+        心情列表
     </title>
-    <link rel='stylesheet' href='/stylesheets/feeling.css' />
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+    <!--<link rel='stylesheet' href='/stylesheets/style.css' />-->
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <h1>心情列表</h1>
-        <p class="sub_title">在时间的延长线上记录心情的点点滴滴,但愿如梭岁月待你我温柔如初</p>
-        <hr>
-        <div class="container">
-            <% for(var i=0;i<articles.length;i++) { %>
-                <div class="blogs">
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3>心情列表</h3>
+                    <p class="sub_title">在时间的延长线上记录心情的点点滴滴,但愿如梭岁月待你我温柔如初</p>
+                    <hr>
+                    <div class="wrap">
+                        <% for(var i=0;i<articles.length;i++) { %>
 
-                    <div class="triangle-left">
+                            <div class="blogs">
+
+                                <div class="triangle-left">
+                                </div>
+                                <div class="title">
+                                    <%= articles[i].title %>
+                                </div>
+                                <div id="content">
+                                    <%- articles[i].content %>
+                                </div>
+                                <div class="dateview">
+                                    <%= articles[i].submitTime.format('yyyy-MM-dd') %>
+                                </div>
+                            </div>
+                            <% }%>
                     </div>
-                    <div class="title">
-                        <%= articles[i].title %>
-                    </div>
-                    <div id="content">
-                        <%- articles[i].content %>
-                    </div>
-                    <div class="dateview">
-                        <%= articles[i].submitTime.format('yyyy-MM-dd') %>
-                    </div>
+
                 </div>
 
 
-                <% }%>
-        </div>
-        <%- include ../footer.ejs %>
+
+
+            </div>
+            <%- include ../footer.ejs %>
+    </div>
+
 
 </body>
 
