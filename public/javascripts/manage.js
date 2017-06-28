@@ -1,5 +1,5 @@
 var vue = new Vue({
-    el: '#mainbody',
+    el: '.blogs_list',
     data: {
         articles: []
     },
