@@ -1,43 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 1200px;
-    margin: 10px auto;
+.comment {
     border: 1px solid #ccc;
-    padding: 20px 0;
-    text-align: center;
+    margin: 0 auto;
 }
 
-.container h2 {
+.comment h3 {
     color: #299983;
     text-align: left;
     margin: 0 200px;
+    margin-top: 30px;
 }
 
-.container form {
+.comment form {
     width: 800px;
     margin: 0 auto;
 }
 
-.container .visitor {
+.comment .visitor {
     width: 100%;
-    height: 12px;
     border: 1px solid #ccc;
-    margin: 15px auto;
-    padding: 10px 0;
-    line-height: 15px;
+    margin: 10px auto;
+    padding: 12px 0;
 }
 
-.container textarea {
+.comment textarea {
     width: 100%;
     height: 150px;
     margin: 0 auto;
 }
 
-.container .button {
+.comment .button {
     width: 100px;
     height: 40px;
     background: #299983 !important;
@@ -48,11 +39,11 @@
     margin: 10px auto;
 }
 
-.container .button:hover {
+.comment .button:hover {
     font-weight: bold;
 }
 
-.container .wrap {
+.comment .comments_wrap {
     background: #fff;
     border-top: 2px solid #aaaaaa;
     margin-top: 70px;
@@ -60,19 +51,19 @@
     padding: 30px;
 }
 
-.container #coments_list {
+.comment #coments_list {
     width: 95%;
     margin: 50px auto;
 }
 
-.container .comments {
+.comment .comments {
     width: 82%;
     border-bottom: 1px dotted #ccc;
     margin: 30px auto;
     text-align: left;
 }
 
-.container #comments_list .name {
+.comment #comments_list .name {
     color: #299983;
     text-align: left;
     font-size: 16px;
@@ -80,12 +71,12 @@
     margin: 8px 2px;
 }
 
-.container #comments_list .message {
+.comment #comments_list .message {
     text-indent: 3em;
     margin: 8px 0 15px 0;
 }
 
-.container .comments a {
+.comment .comments a {
     display: inline-block;
     color: #299983;
     text-decoration: none;

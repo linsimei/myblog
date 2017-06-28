@@ -874,6 +874,169 @@
         background: #299983;
         color: #fff;
     }
+    /*留言板样式*/
+    .comment {
+        border: 1px solid #ccc;
+        margin: 0 auto;
+    }
+    .comment h3 {
+        color: #299983;
+        text-align: left;
+        margin: 0 200px;
+        margin-top: 30px;
+    }
+    .comment form {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .comment .visitor {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin: 10px auto;
+        padding: 12px 0;
+    }
+    .comment textarea {
+        width: 100%;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .comment .button {
+        width: 100px;
+        height: 40px;
+        background: #299983 !important;
+        color: #fff !important;
+        cursor: pointer;
+        border-radius: 5px;
+        display: table;
+        margin: 10px auto;
+    }
+    .comment .button:hover {
+        font-weight: bold;
+    }
+    .comment .comments_wrap {
+        background: #fff;
+        border-top: 2px solid #aaaaaa;
+        margin-top: 70px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .comment #coments_list {
+        width: 95%;
+        margin: 50px auto;
+    }
+    .comment .comments {
+        width: 82%;
+        border-bottom: 1px dotted #ccc;
+        margin: 30px auto;
+        text-align: left;
+    }
+    .comment .comments h4 {
+        margin-bottom: 0;
+    }
+    .comment #comments_list .name {
+        color: #299983;
+        text-align: left;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 8px 2px;
+    }
+    .comment #comments_list .message {
+        text-indent: 3em;
+        margin: 8px 0 15px 0;
+    }
+    .comment .comments a {
+        display: inline-block;
+        color: #299983;
+        text-decoration: none;
+        float: right;
+        margin-top: -20px;
+    }
+    /*后台功能样式*/
+    .admin {
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+    .admin .admin_wrap {
+        width: 380px;
+        padding: 10px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+    }
+    /*模块分类:*/
+    .admin .admin_wrap a {
+        width: 320px;
+        display: block;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: #299983;
+    }
+    .admin .admin_wrap a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*模块管理:*/
+    .admin .add {
+        margin-left: 410px;
+        display: block;
+        width: 120px;
+        background: #299983;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .admin .add:hover {
+        font-weight: bolder;
+    }
+    .admin table {
+        border-collapse: collapse;
+        margin: 20px auto;
+    }
+    .admin table tr,
+    .admin table th,
+    .admin table td {
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 8px;
+    }
+    .admin table td a {
+        text-decoration: none;
+        text-align: center;
+        color: #299983;
+    }
+    .admin table a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*模块添加操作页面:*/
+    .admin form {
+        width: 350px;
+        border: 1px solid #ccc;
+        text-align: left;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .admin form div {
+        margin: 20px;
+    }
+    .admin form div select,
+    .admin input {
+        padding: 8px;
+    }
+    .admin form .button {
+        margin-left: 20px;
+        padding: 5px 20px;
+        background: #299983;
+        color: #fff;
+    }
+    .admin form .button:hover {
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width:120px) and (max-width:999px) {
@@ -1579,5 +1742,173 @@
         margin: .01rem auto;
         background: #299983;
         color: #fff;
+    }
+    /*留言板移动端样式*/
+    .comment {
+        border: .01rem solid #ccc;
+        margin: .2rem auto;
+    }
+    .comment h3 {
+        font-size: .34rem;
+        color: #299983;
+        text-align: left;
+        margin: 0 0.2rem;
+        margin-top: .3rem;
+        font-weight: 700;
+    }
+    .comment form {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .comment .visitor {
+        width: 100%;
+        border: .01rem solid #ccc;
+        margin: .1rem auto;
+        padding: .12rem 0;
+    }
+    .comment textarea {
+        width: 100%;
+        height: 2rem;
+        margin: 0 auto;
+    }
+    .comment .button {
+        width: 1rem;
+        height: .4rem;
+        background: #299983 !important;
+        color: #fff !important;
+        cursor: pointer;
+        border-radius: .05rem;
+        display: table;
+        margin: .1rem auto;
+    }
+    .comment .button:hover {
+        font-weight: bold;
+    }
+    .comment .comments_wrap {
+        background: #fff;
+        border-top: .02rem solid #aaaaaa;
+        margin-top: .7rem;
+        margin-bottom: .2rem;
+        padding: .3rem;
+    }
+    .comment #coments_list {
+        width: 95%;
+        margin: .5rem auto;
+    }
+    .comment .comments {
+        width: 82%;
+        border-bottom: .01rem dotted #ccc;
+        margin: .1rem auto;
+        text-align: left;
+        font-size: .28rem;
+    }
+    .comment .comments h4 {
+        margin-bottom: 0;
+    }
+    .comment #comments_list .name {
+        color: #299983;
+        text-align: left;
+        font-size: .28rem;
+        font-weight: bold;
+        margin: .08rem .02rem;
+    }
+    .comment #comments_list .message {
+        text-indent: 3em;
+        font-size: .26rem;
+        margin: .08rem 0 .15rem 0;
+    }
+    .comment .comments a {
+        display: inline-block;
+        color: #299983;
+        text-decoration: none;
+        float: right;
+        margin-top: -.3rem;
+        font-size: .24rem;
+    }
+    /*后台功能移动端样式*/
+    .admin {
+        margin: .3rem auto;
+        border: .01rem solid #ccc;
+        padding: .3rem;
+    }
+    .admin .admin_wrap {
+        width: 5rem;
+        padding: .3rem;
+        margin: .2rem auto;
+        border: .01rem solid #ccc;
+    }
+    /*模块分类:*/
+    .admin .admin_wrap a {
+        width: 3.8rem;
+        display: block;
+        margin: .1rem auto;
+        border: .01rem solid #ccc;
+        padding: .1rem;
+        text-decoration: none;
+        text-align: center;
+        color: #299983;
+    }
+    .admin .admin_wrap a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*模块管理:*/
+    .admin .add {
+        margin-left: 1rem;
+        display: block;
+        width: 1.2rem;
+        background: #299983;
+        color: #fff;
+        padding: .05rem .1rem;
+        border-radius: .05rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    .admin .add:hover {
+        font-weight: bolder;
+    }
+    .admin table {
+        border-collapse: collapse;
+        margin: .2rem auto;
+    }
+    .admin table tr,
+    .admin table th,
+    .admin table td {
+        border: .01rem solid #ccc;
+        text-align: center;
+        padding: .08rem;
+    }
+    .admin table td a {
+        text-decoration: none;
+        text-align: center;
+        color: #299983;
+    }
+    .admin table a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*模块添加操作页面:*/
+    .admin form {
+        width: 4.5rem;
+        border: .01rem solid #ccc;
+        text-align: left;
+        margin: .2rem auto;
+        padding: .2rem;
+    }
+    .admin form div {
+        margin: .2rem;
+    }
+    .admin form div select,
+    .admin input {
+        padding: .08rempx;
+    }
+    .admin form .button {
+        margin-left: .2remx;
+        padding: .05rem .2rem;
+        background: #299983;
+        color: #fff;
+    }
+    .admin form .button:hover {
+        font-weight: bold;
     }
 }

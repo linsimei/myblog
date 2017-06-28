@@ -1,97 +1,99 @@
-                            * {
-                                margin: 0;
-                                padding: 0;
-                            }
-                            
-                            #mainbody {
-                                width: 1200px;
-                                margin: 20px auto;
-                                border: 1px solid #ccc;
-                                padding: 20px;
-                            }
-                            
-                            .container {
-                                width: 30%;
-                                margin: 20px auto;
-                                border: 1px solid #ccc;
-                                padding: 20px;
-                            }
-                            /*模块分类:*/
-                            
-                            #mainbody .container a {
-                                display: block;
-                                margin: 10px;
-                                border: 1px solid #ccc;
-                                padding: 10px;
-                                text-decoration: none;
-                                text-align: center;
-                                color: #299983;
-                            }
-                            
-                            #mainbody .container a:hover {
-                                background: #299983;
-                                color: #fff;
-                            }
-                            /*模块管理:*/
-                            
-                            .container .add {
-                                background: #299983;
-                                color: #fff;
-                                padding: 5px 10px;
-                                border-radius: 5px;
-                                text-decoration: none;
-                            }
-                            
-                            .container .add:hover {
-                                font-weight: bolder;
-                            }
-                            
-                            .container table {
-                                border-collapse: collapse;
-                                margin: 20px auto;
-                            }
-                            
-                            .container table tr,
-                            th,
-                            td {
-                                border: 1px solid #ccc;
-                                text-align: center;
-                                padding: 8px;
-                            }
-                            
-                            .container table a {
-                                text-decoration: none;
-                                text-align: center;
-                                color: #299983;
-                            }
-                            
-                            .container table a:hover {
-                                background: #299983;
-                                color: #fff;
-                            }
-                            /*模块添加操作页面:*/
-                            
-                            .container form {
-                                text-align: left;
-                                margin: 20px;
-                            }
-                            
-                            .container form div {
-                                margin: 20px;
-                            }
-                            
-                            .container form div select,
-                            input {
-                                padding: 8px;
-                            }
-                            
-                            .container form .button {
-                                margin-left: 20px;
-                                padding: 5px 10px;
-                                background: #299983;
-                                color: #fff;
-                            }
-                            
-                            .container form .button:hover {
-                                font-weight: bold;
-                            }
+                      .admin {
+                          margin: 20px auto;
+                          border: 1px solid #ccc;
+                          padding: 20px;
+                      }
+                      
+                      .admin .admin_wrap {
+                          width: 380px;
+                          padding: 10px;
+                          margin: 20px auto;
+                          border: 1px solid #ccc;
+                      }
+                      /*模块分类:*/
+                      
+                      .admin .admin_wrap a {
+                          width: 320px;
+                          display: block;
+                          margin: 10px auto;
+                          border: 1px solid #ccc;
+                          padding: 10px;
+                          text-decoration: none;
+                          text-align: center;
+                          color: #299983;
+                      }
+                      
+                      .admin .admin_wrap a:hover {
+                          background: #299983;
+                          color: #fff;
+                      }
+                      /*模块管理:*/
+                      
+                      .admin .add {
+                          margin-left: 410px;
+                          display: block;
+                          width: 120px;
+                          background: #299983;
+                          color: #fff;
+                          padding: 5px 10px;
+                          border-radius: 5px;
+                          text-decoration: none;
+                          text-align: center;
+                      }
+                      
+                      .admin .add:hover {
+                          font-weight: bolder;
+                      }
+                      
+                      .admin table {
+                          border-collapse: collapse;
+                          margin: 20px auto;
+                      }
+                      
+                      .admin table tr,
+                      .admin table th,
+                      .admin table td {
+                          border: 1px solid #ccc;
+                          text-align: center;
+                          padding: 8px;
+                      }
+                      
+                      .admin table td a {
+                          text-decoration: none;
+                          text-align: center;
+                          color: #299983;
+                      }
+                      
+                      .admin table a:hover {
+                          background: #299983;
+                          color: #fff;
+                      }
+                      /*模块添加操作页面:*/
+                      
+                      .admin form {
+                          width: 350px;
+                          border: 1px solid #ccc;
+                          text-align: left;
+                          margin: 20px auto;
+                          padding: 20px;
+                      }
+                      
+                      .admin form div {
+                          margin: 20px;
+                      }
+                      
+                      .admin form div select,
+                      .admin input {
+                          padding: 8px;
+                      }
+                      
+                      .admin form .button {
+                          margin-left: 20px;
+                          padding: 5px 20px;
+                          background: #299983;
+                          color: #fff;
+                      }
+                      
+                      .admin form .button:hover {
+                          font-weight: bold;
+                      }

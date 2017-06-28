@@ -2,36 +2,49 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
         博客列表
     </title>
-    <link rel='stylesheet' href='/stylesheets/article.css' />
-    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+
+    <script src="/javascripts/jquery.js"></script>
     <script src="/vuejs/vue.js"></script>
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+
+    <link rel='stylesheet' href='/stylesheets/article.css' />
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div id="mainbody">
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody blogs_list">
 
-            <div class="container">
-                <h1>文章列表</h1>
+                <div class="blogs_wrap">
+                    <h1>文章列表</h1>
 
-                <div class="article" v-for="article in articles">
-                    <hr>
-                    <div class="title">标题:{{article.title}}</div>
-                    <div class="info">发布时间:{{article.submitTime}}</div>
-                    <div class="manage">
-                        <a class="all_content" v-bind:href="'/article/content?id='+article._id">查看全文>></a>
-                        <a v-bind:href="'/article/modify?id='+article._id">编辑</a>
-                        <a v-bind:href="'/article/delete?id='+article._id" onclick="return confirm('确定删除？')">删除</a>
-                        <a v-bind:href="'/article/recommend?id='+article._id">推荐至首页</a>
+                    <div class="article" v-for="article in articles">
+                        <hr>
+                        <div class="title">标题:{{article.title}}</div>
+                        <div class="info">发布时间:{{article.submitTime}}</div>
+                        <div class="manage">
+                            <a class="all_content" v-bind:href="'/article/content?id='+article._id">查看全文>></a>
+                            <a v-bind:href="'/article/modify?id='+article._id">编辑</a>
+                            <a v-bind:href="'/article/delete?id='+article._id" onclick="return confirm('确定删除？')">删除</a>
+                            <a v-bind:href="'/article/recommend?id='+article._id">推荐至首页</a>
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>

@@ -2,36 +2,52 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
+        后台功能添加
     </title>
-    <link rel='stylesheet' href='/stylesheets/admin.css' />
     <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+
+
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div class="container">
-            <form method="post" action="/type/add" class="create">
-                <div>
-                    <label for="">上级模块</label>
-                    <select name="parent" id="">
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody admin">
+                <form method="post" action="/type/add" class="create">
+                    <div>
+                        <label for="">上级模块</label>
+                        <select name="parent" id="">
                     <option value="">没有上级</option>
                     <% for(var i=0;i<types.length;i++){ %>
                         <option value="<%= types[i].id %>"><%= types[i].name %></option>
                     <% } %>
                 </select>
-                </div>
+                    </div>
 
-                <div>
-                    <label>模块名称</label>
-                    <input type="text" name="name" placeholder="模块名称" />
-                </div>
+                    <div>
+                        <label>模块名称</label>
+                        <input type="text" name="name" placeholder="模块名称" />
+                    </div>
 
-                <input type="submit" class="button" />
-            </form>
-        </div>
+                    <input type="submit" class="button" />
+                </form>
+            </div>
 
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>

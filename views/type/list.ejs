@@ -2,50 +2,64 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
         后台管理
     </title>
-    <link rel='stylesheet' href='/stylesheets/admin.css' />
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
 
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div class="container">
-            <a class="add" href="/type/add">添加模块</a>
-            <div>
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody admin">
+                <a class="add" href="/type/add">添加模块</a>
+                <div>
+
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>上级模块</th>
+                            <th>模块名称</th>
+                            <th>操作</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <% for(var i = 0;i< types.length;i++){ %>
+                            <tr>
+                                <td>
+                                    <%= types[i].parent %>
+                                </td>
+                                <td>
+                                    <%= types[i].name %>
+                                </td>
+                                <td>
+                                    <a href="/type/edit?id=<%= types[i].id %>">编辑</a>
+                                    <a href="/type/delete?id=<%= types[i].id %>">删除</a>
+                                </td>
+                            </tr>
+                            <% } %>
+
+                    </tbody>
+                </table>
 
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>上级模块</th>
-                        <th>模块名称</th>
-                        <th>操作</th>
-                    </tr>
-
-                </thead>
-                <tbody>
-                    <% for(var i = 0;i< types.length;i++){ %>
-                        <tr>
-                            <td>
-                                <%= types[i].parent %>
-                            </td>
-                            <td>
-                                <%= types[i].name %>
-                            </td>
-                            <td>
-                                <a href="/type/edit?id=<%= types[i].id %>">编辑</a>
-                                <a href="/type/delete?id=<%= types[i].id %>">删除</a>
-                            </td>
-                        </tr>
-                        <% } %>
-
-                </tbody>
-            </table>
-
-        </div>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>
