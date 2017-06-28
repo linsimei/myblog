@@ -2,37 +2,46 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
-        博客列表
+        相册列表
     </title>
 
-    <link rel='stylesheet' href='/stylesheets/photo.css' />
-    <link rel="stylesheet" href="/stylesheets/commom.css">
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+
+    <script src="/javascripts/jquery.js"></script>
     <script src="/vuejs/vue.js"></script>
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div id="mainbody">
-            <div class="top">
-                <h1>相册列表</h1>
-                <p class="sub_title">用相片定格回忆的点点滴滴</p>
-                <button type="button"><a class="upload" href="/photo/upload">上传图片</a></button>
-            </div>
-
-
-            <div class="wrap">
-                <div class="photo" v-for="photo in photos">
-                    <i>
-                        <img v-bind:src="photo.src" alt="" />
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody photos">
+                <div class="top clear">
+                    <h3>相册列表</h3>
+                    <p class="sub_title">相片定格回忆的点点滴滴</p>
+                    <button type="button"><a class="upload" href="/photo/upload">上传图片</a></button>
+                </div>
+                <div class="photo_wrap clear">
+                    <div class="photo" v-for="photo in photos">
+                        <i>
+                        <img v-bind:src="photo.src" alt="" class="img" />
                     </i>
-                    <p class='info'><span>{{photo.title}}</span><span>上传时间：{{photo.createTime}}</span></p>
+                        <p class='info'><span>{{photo.title}}</span><span>上传时间：{{photo.createTime}}</span></p>
+                    </div>
                 </div>
             </div>
-
-
-        </div>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 
 </body>
 

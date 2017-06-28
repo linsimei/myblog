@@ -1,5 +1,5 @@
 var app = new Vue({
-    el: '#mainbody',
+    el: '.mainbody',
     data: {
         photos: [],
         times: []

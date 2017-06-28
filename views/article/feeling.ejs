@@ -24,29 +24,28 @@
     <div class="container">
         <%- include ../header.ejs %>
             <div class="row mainbody feeling">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <h3>心情列表</h3>
-                    <p class="sub_title">在时间的延长线上记录心情的点点滴滴,但愿如梭岁月待你我温柔如初</p>
-                    <hr>
-                    <div class="wrap">
-                        <% for(var i=0;i<articles.length;i++) { %>
-                            <div class="blogs">
-                                <div class="triangle-left">
-                                </div>
-                                <div class="title">
-                                    <%= articles[i].title %>
-                                </div>
-                                <div class="content">
-                                    <%- articles[i].content %>
-                                </div>
-                                <div class="dateview">
-                                    <%= articles[i].submitTime.format('yyyy-MM-dd') %>
-                                </div>
+                <h3>心情列表</h3>
+                <p class="sub_title">在时间的延长线上记录心情的点点滴滴,但愿如梭岁月待你我温柔如初</p>
+                <hr>
+                <div class="wrap">
+                    <% for(var i=0;i<articles.length;i++) { %>
+                        <div class="blogs">
+                            <div class="triangle-left">
                             </div>
-                            <% }%>
-                    </div>
-
+                            <div class="title">
+                                <%= articles[i].title %>
+                            </div>
+                            <div class="content">
+                                <%- articles[i].content%>
+                            </div>
+                            <div class="dateview">
+                                <%= articles[i].submitTime.format('yyyy-MM-dd') %>
+                            </div>
+                        </div>
+                        <% }%>
                 </div>
+
+
 
 
 

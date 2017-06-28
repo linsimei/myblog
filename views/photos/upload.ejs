@@ -2,28 +2,43 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
-
+        相册上传页面
     </title>
-    <link rel='stylesheet' href='/stylesheets/photo.css' />
+
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div id="container">
-            <div class="describe">
-                <input id="title" type="text" placehoder="照片描述" />
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody photo_upload">
+                <div class="describe">
+                    <input id="title" type="text" placehoder="照片描述" />
+                </div>
+                <div class="upload">
+                    <input id="img_upload" type="file" />
+                    <img src="" id="img" alt="">
+                </div>
+                <div>
+                    <input type="button" id="submit" value="提交" />
+                </div>
             </div>
-            <div class="upload">
-                <input id="img_upload" type="file" />
-                <img src="" id="img" alt="">
-            </div>
-            <div>
-                <input type="button" id="submit" value="提交" />
-            </div>
-        </div>
-        <%- include ../footer.ejs %>
-
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>

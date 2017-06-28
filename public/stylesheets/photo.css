@@ -1,38 +1,30 @@
-#mainbody {
+/*相册列表页面*/
+
+.photo {
     width: 100%;
     margin: 20px auto;
 }
 
-#mainbody .top {
+.photo .top {
     width: 100%;
     margin: 0 auto;
     border-bottom: 2px solid #ccc;
 }
 
-#mainbody .top:after {
-    content: ".";
-    height: 0;
-    line-height: 0;
-    display: block;
-    clear: both;
-    visibility: hidden;
-}
-
-h1 {
-    width: 1200px;
+.photo.photo h3 {
     margin: 40px auto;
     color: #299983;
     text-align: center;
     letter-spacing: 10px;
 }
 
-.sub_title {
+.photo .sub_title {
     color: #299983;
     font-size: 16px;
     float: left;
 }
 
-#mainbody button {
+.photo button {
     width: 120px;
     color: #000;
     padding: 5px 10px;
@@ -41,28 +33,22 @@ h1 {
     float: right;
 }
 
-#mainbody .upload {
+.photo .upload {
     text-decoration: none;
     color: #000;
 }
 
-#mainbody .upload:hover {
+.photo .upload:hover {
     font-weight: bold;
 }
 
-#mainbody .wrap {
+.photo .photo_wrapwrap {
     width: 1200px;
     margin: 20px auto;
     background: #fff;
 }
 
-#mainbody .wrap:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-#mainbody .photo {
+.photo .photo {
     float: left;
     width: 350px;
     height: 300px;
@@ -70,19 +56,19 @@ h1 {
     margin: 15px;
 }
 
-#mainbody .photo i {
+.photo .photo i {
     float: left;
     width: 100%;
     height: 280px;
     overflow: hidden;
 }
 
-#mainbody img {
+.photo img {
     display: inline-block;
     width: 100%;
 }
 
-#mainbody img:hover {
+.photo img:hover {
     -moz-animation: rotate 1s linear;
     -webkit-animation: rotate 1s linear;
     animation: rotate 1s linear;
@@ -115,7 +101,7 @@ h1 {
     }
 }
 
-#mainbody .wrap .info span {
+.photo .wrap .info span {
     margin-right: 15px;
     color: #666666;
 }
@@ -123,31 +109,24 @@ h1 {
 
 /*照片上传页面*/
 
-#container {
-    width: 100%;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-#container .describe {
+photo_upload .describe {
     padding: 10px 0;
     margin: 10px auto;
     margin-bottom: 2px;
 }
 
-#container .describe #title {
+photo_upload .describe #title {
     width: 320px;
     padding: 5px 0;
     margin: 10px auto;
     margin-bottom: 2px;
 }
 
-#container #img_upload {
+photo_upload #img_upload {
     margin-bottom: 15px;
 }
 
-#container #submit {
+photo_upload #submit {
     width: 120px;
     padding: 5px 0;
     border-radius: 5px;

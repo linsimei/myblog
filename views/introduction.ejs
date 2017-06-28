@@ -2,41 +2,57 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
-
+        关于我
     </title>
-    <link rel='stylesheet' href='/stylesheets/introduction.css' />
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+
 </head>
 
 <body>
-    <%- include header.ejs %>
-        <section id="mainbody">
-            <div class="left">
-                <h3>Just something about me</h3>
-                <p>
-                    关于我？<br> 非典型90后宅女；<br>强迫症纠结癌重度患者； <br>思绪天马行空的伪文艺女青年；<br>
-
-                </p>
-
-
-            </div>
-
-
-            <aside class="right">
-
-                <div class="avatar"><img src="/images/avatar/avatar01.jpg" alt="头像"></div>
-                <p>心怀感恩,一路前行!</p>
-
-                <div class="info">
-                    姓名：林思梅 </br> 籍贯：广东汕尾</br> 爱好：研究美食，k歌，看电影</br> QQ：2021198996 </br> 邮箱：<a href="mailto:2021198996@qq.com">2021198996@qq.com</a></br>
-                    github 地址: <a href="https://github.com/linsimei">https://github.com/linsimei</a>
+    <div class="container">
+        <%- include header.ejs %>
+            <section class="row mainbody introduction clear">
+                <div class="col-lg-9 col-md-9 col-sm-12 left">
+                    <h3>Just something about me</h3>
+                    <p>
+                        关于我？<br> 非典型90后宅女；<br>强迫症纠结癌重度患者； <br>思绪天马行空的伪文艺女青年；<br>
+                    </p>
 
 
                 </div>
-            </aside>
-        </section>
-        <%- include footer.ejs %>
+
+
+                <aside class="col-lg-3 col-md-3 col-sm-12 right">
+
+                    <div class="wrapper">
+                        <div class="avatar"><i><img src="/images/avatar/avatar01.jpg" alt="头像" /></i></div>
+                        <p class="motto">心怀感恩,一路前行!</p>
+
+                    </div>
+
+                    <div class="info">
+                        <h4>相关信息：</h4>
+                        姓名：林思梅 </br> 籍贯：广东汕尾</br> 爱好：研究美食，k歌，看电影</br> QQ：2021198996 </br> 邮箱：<a href="mailto:2021198996@qq.com">2021198996@qq.com</a></br>
+                        github 地址: <a href="https://github.com/linsimei">https://github.com/linsimei</a>
+
+
+                    </div>
+                </aside>
+            </section>
+            <%- include footer.ejs %>
+    </div>
 </body>
 
 </html>
-<script src="/javascripts/header.js"></script>

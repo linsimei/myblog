@@ -557,148 +557,323 @@
         right: 20px;
         bottom: 10px;
     }
-}
-
-
-/*有关心情页面样式*/
-
-.feeling h3 {
-    margin: 40px auto;
-    color: #299983;
-    text-align: center;
-    letter-spacing: 10px;
-    font-size: 32px;
-    font-weight: 700;
-}
-
-.feeling .sub_title {
-    margin-bottom: 5px;
-    color: #299983;
-    font-size: 16px;
-}
-
-.feeling hr {
-    height: 1px;
-    border: 1px;
-    background: #666666;
-    margin-top: 0;
-}
-
-.feeling .wrap {
-    width: 80%;
-    margin: 0 auto;
-    margin-left: 280px;
-    border-left: 3px solid #666666;
-}
-
-.feeling .blogs {
-    -moz-animation: rotate 0.5s linear;
-    -webkit-animation: rotate 0.5s linear;
-    animation: rotate 0.5s linear;
-}
-
-@-moz-keyframes rotate {
-    0% {
-        -moz-transform: rotate(0deg);
+    /*有关心情页面样式*/
+    .feeling h3 {
+        margin: 40px auto;
+        color: #299983;
+        text-align: center;
+        letter-spacing: 10px;
+        font-size: 32px;
+        font-weight: 700;
     }
-    100% {
-        -moz-transform: rotate(180deg);
+    .feeling .sub_title {
+        margin-bottom: 5px;
+        color: #299983;
+        font-size: 16px;
     }
-}
-
-@-webkit-keyframes rotate {
-    0% {
-        -webkit-transform: rotate(0deg);
+    .feeling hr {
+        height: 1px;
+        border: 1px;
+        background: #666666;
+        margin-top: 0;
     }
-    100% {
-        -webkit-transform: rotate(180deg);
+    .feeling .wrap {
+        width: 80%;
+        margin: 0 auto;
+        margin-left: 280px;
+        border-left: 3px solid #666666;
     }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
+    .feeling .blogs {
+        -moz-animation: rotate 0.5s linear;
+        -webkit-animation: rotate 0.5s linear;
+        animation: rotate 0.5s linear;
     }
-    100% {
-        transform: rotate(180deg);
+    @-moz-keyframes rotate {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        100% {
+            -moz-transform: rotate(180deg);
+        }
     }
-}
-
-.feeling .blogs {
-    width: 80%;
-    -webkit-box-shadow: 1px 1px 1px 1px #299983;
-    border-radius: 15px;
-    margin: 30px;
-    margin-left: 58px;
-    text-align: left;
-    padding: 20px;
-    padding-left: 30px;
-    color: #666666;
-    /*float: right;*/
-    position: relative;
-    background: #fff;
-}
-
-.feeling .blogs:hover {
-    -webkit-box-shadow: 1px 1px 1px 1px #666666;
-}
-
-.feeling .blogs .triangle-left:before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    background: #299983;
-    position: absolute;
-    left: -30px;
-    top: -4px;
-}
-
-.feeling .blogs .dateview {
-    width: 120px;
-    padding: 10px 15px;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 35px 0px 35px 0px;
-    background: #299983;
-    color: #fff;
-    text-align: center;
-    position: absolute;
-    left: -240px;
-    top: 34px;
-    display: block;
-}
-
-.feeling .blogs .dateview .active {
-    background: #fff;
-    color: #299983;
-}
-
-.feeling .blogs .dateview .hoverStyle {
-    background: #fff;
-    color: #299983;
-}
-
-.feeling .blogs .title {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.feeling .content {
-    font-size: 18px;
-    line-height: 18px;
-}
-
-.feeling .triangle-left {
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-right: 40px solid #fff;
-    border-bottom: 20px solid transparent;
-    display: inline-block;
-    position: absolute;
-    left: -35px;
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(180deg);
+        }
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+    .feeling .blogs {
+        width: 80%;
+        -webkit-box-shadow: 1px 1px 1px 1px #299983;
+        border-radius: 15px;
+        margin: 30px;
+        margin-left: 58px;
+        text-align: left;
+        padding: 20px;
+        padding-left: 30px;
+        color: #666666;
+        /*float: right;*/
+        position: relative;
+        background: #fff;
+    }
+    .feeling .blogs:hover {
+        -webkit-box-shadow: 1px 1px 1px 1px #666666;
+    }
+    .feeling .blogs .triangle-left:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border: 2px solid #f5f5f5;
+        border-radius: 50%;
+        background: #299983;
+        position: absolute;
+        left: -30px;
+        top: -4px;
+    }
+    .feeling .blogs .dateview {
+        width: 120px;
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 35px 0px 35px 0px;
+        background: #299983;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        left: -240px;
+        top: 34px;
+        display: block;
+    }
+    .feeling .blogs .dateview .active {
+        background: #fff;
+        color: #299983;
+    }
+    .feeling .blogs .dateview .hoverStyle {
+        background: #fff;
+        color: #299983;
+    }
+    .feeling .blogs .title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .feeling .content {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .feeling .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-right: 40px solid #fff;
+        border-bottom: 20px solid transparent;
+        display: inline-block;
+        position: absolute;
+        left: -35px;
+    }
+    /*关于我*/
+    .introduction .left {
+        width: 73%;
+        height: 800px;
+        display: inline-block;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px 1px #ccc;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+        background: #fff;
+    }
+    .introduction .left:hover {
+        border: 1px solid #299983;
+        box-shadow: 1px 1px 1px 1px #299983;
+    }
+    .introduction .left h3 {
+        color: #299983;
+        font-size: 36px;
+        padding: 10px;
+        text-align: center;
+    }
+    .introduction .left p {
+        color: #666666;
+        font-size: 24px;
+        padding: 10px;
+        text-align: center;
+    }
+    .introduction .right {
+        display: inline-block;
+        margin: 10px auto;
+        border-radius: 15px;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeInRight;
+        color: #666666;
+    }
+    .introduction .right .info {
+        text-align: left;
+        font-size: 16px;
+        padding: 20px;
+        margin-top: 20px;
+        line-height: 40px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px 1px #AAAAAA;
+        background: #fff;
+    }
+    .introduction .right .info:hover {
+        box-shadow: 1px 1px 1px 1px #299983;
+    }
+    .introduction .right .info a {
+        color: #299983;
+    }
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    @keyframes fadeInRight {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    /*相册列表页面*/
+    .photos {
+        margin: 20px auto;
+    }
+    .photos .top {
+        margin: 0 auto;
+        border-bottom: 2px solid #ccc;
+    }
+    .photos .top h3 {
+        margin: 40px auto;
+        color: #299983;
+        text-align: center;
+        letter-spacing: 10px;
+        font-weight: 700;
+    }
+    .photos .top .sub_title {
+        color: #299983;
+        font-size: 16px;
+        float: left;
+        margin-bottom: -5px;
+    }
+    .photos button {
+        width: 120px;
+        color: #000;
+        padding: 5px 10px;
+        text-decoration: none;
+        border: 1px solid #aaaaaa;
+        float: right;
+    }
+    .photos .upload {
+        text-decoration: none;
+        color: #000;
+    }
+    .photos .upload:hover {
+        font-weight: bold;
+    }
+    .photos .photo_wrap {
+        margin: 20px auto;
+        background: #fff;
+    }
+    .photo_wrap .photo {
+        float: left;
+        width: 350px;
+        height: 300px;
+        position: relative;
+        margin: 15px;
+    }
+    .photo_wrap .photo i {
+        float: left;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+    }
+    .photo_wrap .img {
+        display: inline-block;
+        width: 100%;
+    }
+    .photo_wrap .img:hover {
+        -moz-animation: rotate 1s linear;
+        -webkit-animation: rotate 1s linear;
+        animation: rotate 1s linear;
+    }
+    @-moz-keyframes rotate {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .photo .wrap_wrap .info span {
+        margin-right: 15px;
+        color: #666666;
+    }
+    /*照片上传页面*/
+    .photo_upload {
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .photo_upload .describe {
+        padding: 10px 0;
+        margin: 10px auto;
+        margin-bottom: 2px;
+    }
+    .photo_upload .describe #title {
+        width: 320px;
+        padding: 5px 0;
+        margin: 10px auto;
+        margin-bottom: 2px;
+    }
+    .photo_upload #img_upload {
+        margin-bottom: 15px;
+        margin: 10px auto;
+    }
+    .photo_upload #submit {
+        width: 120px;
+        padding: 5px 0;
+        border-radius: 5px;
+        margin: 10px auto;
+        background: #299983;
+        color: #fff;
+    }
 }
 
 @media screen and (min-width:120px) and (max-width:999px) {
@@ -1109,9 +1284,6 @@
         font-size: .24rem;
     }
     /*有关心情移动端页面样式*/
-    .mainbody {
-        margin: .2rem auto;
-    }
     .feeling h3 {
         margin: .4rem auto;
         color: #299983;
@@ -1230,5 +1402,182 @@
         display: inline-block;
         position: absolute;
         left: -.35rem;
+    }
+    /*关于我移动端样式*/
+    .introduction .left {
+        width: 100%;
+        margin: 0 auto;
+        height: 6rem;
+        border-radius: .15rem;
+        border: .01rem solid #ccc;
+        box-shadow: .01rem .01rem .01rem .01rem #ccc;
+        animation-fill-mode: both;
+        background: #fff;
+    }
+    .introduction .left:hover {
+        border: .01rem solid #299983;
+        box-shadow: .01rem .01rem .01rem .01rem #299983;
+    }
+    .introduction .left h3 {
+        color: #299983;
+        font-size: .48rem;
+        padding: .01rem;
+        text-align: center;
+    }
+    .introduction .left p {
+        color: #666666;
+        font-size: .36rem;
+        line-height: .72rem;
+        padding: .01rem;
+        text-align: center;
+    }
+    .introduction .right {
+        width: 100%;
+        margin: .1rem auto;
+        border-radius: .15rem;
+        animation-fill-mode: both;
+        color: #666666;
+    }
+    .introduction .right .info {
+        text-align: left;
+        font-size: .28rem;
+        padding: .4rem;
+        margin-top: .2rem;
+        line-height: .56rem;
+        border-radius: .15rem;
+        box-shadow: .01rem .01rem .01rem .01rem #AAAAAA;
+        background: #fff;
+    }
+    .introduction .right .info h4 {
+        color: #299983;
+        font-size: .40rem;
+        padding: .01rem;
+        text-align: left;
+    }
+    .introduction .right .info:hover {
+        box-shadow: .01rem .01rem .01rem .01rem #299983;
+    }
+    .introduction .right .info a {
+        color: #299983;
+    }
+    .introduction .right .wrapper {
+        display: none;
+    }
+    /*相册列表页面*/
+    .photos {
+        margin: .2rem auto;
+    }
+    .photos .top {
+        margin: 0 auto;
+        border-bottom: .02rem solid #ccc;
+    }
+    .photos .top h3 {
+        margin: .4rem auto;
+        color: #299983;
+        text-align: center;
+        letter-spacing: .1rem;
+        font-weight: 700;
+    }
+    .photos .top .sub_title {
+        color: #299983;
+        font-size: .24rem;
+        float: left;
+    }
+    .photos button {
+        width: 1.5rem;
+        color: #000;
+        padding: .05rem .1rem;
+        text-decoration: none;
+        border: .01rem solid #aaaaaa;
+        float: right;
+    }
+    .photos .upload {
+        text-decoration: none;
+        color: #000;
+    }
+    .photos .upload:hover {
+        font-weight: bold;
+    }
+    .photos .photo_wrap {
+        margin: .2rem auto;
+        background: #fff;
+    }
+    .photo_wrap .photo {
+        float: left;
+        width: 3.3rem;
+        height: 3.5rem;
+        position: relative;
+        margin: .15rem;
+    }
+    .photo_wrap .photo i {
+        float: left;
+        width: 100%;
+        height: 2.8rem;
+        overflow: hidden;
+    }
+    .photo_wrap .img {
+        display: inline-block;
+        width: 100%;
+    }
+    .photo_wrap .img:hover {
+        -moz-animation: rotate 1s linear;
+        -webkit-animation: rotate 1s linear;
+        animation: rotate 1s linear;
+    }
+    @-moz-keyframes rotate {
+        0% {
+            -moz-transform: rotate(0deg);
+        }
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .photo .wrap_wrap .info span {
+        margin-right: .15rem;
+        color: #666666;
+    }
+    /*照片上传页面*/
+    .photo_upload {
+        margin: .3rem auto;
+        border: .01rem solid #ccc;
+        padding: .1rem 0;
+        text-align: center;
+    }
+    .photo_upload .describe {
+        padding: .2rem 0;
+        margin-bottom: .02rem;
+    }
+    .photo_upload .describe #title {
+        width: 3.2rem;
+        padding: .05rem 0;
+        margin-bottom: .02rem;
+    }
+    #img_upload {
+        margin: .2rem 2rem;
+        text-align: center;
+    }
+    .photo_upload #submit {
+        width: 1.2rem;
+        padding: .05rem 0;
+        border-radius: .05rem;
+        margin: .01rem auto;
+        background: #299983;
+        color: #fff;
     }
 }
