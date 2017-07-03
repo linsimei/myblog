@@ -124,3 +124,7 @@ a:focus {
 li {
     list-style: none;
 }
+
+h3 {
+    font-size: 32px;
+}

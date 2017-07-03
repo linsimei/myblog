@@ -18,7 +18,7 @@
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/common.css' />
 
-    <link rel='stylesheet' href='/stylesheets/article.css' />
+
 </head>
 
 <body>
@@ -30,9 +30,9 @@
                     <h3>文章列表</h3>
 
                     <div class="article" v-for="article in articles">
-                        <hr>
+
                         <div class="title">标题:{{article.title}}</div>
-                        <div class="info">发布时间:{{article.submitTime}}</div>
+                        <div class="info">发布时间:{{new Date(article.submitTime).format('yyyy-MM-dd')}}</div>
                         <div class="manage">
                             <a class="all_content" v-bind:href="'/article/content?id='+article._id">查看全文>></a>
                             <a v-bind:href="'/article/modify?id='+article._id">编辑</a>

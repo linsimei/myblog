@@ -1,91 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
+.content_wrap {
+    display: inline-block;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
 }
 
-
-/*.module {
-    width: 100%;
-    list-style: none;
-    margin: 20px auto;
-}
-
-.module li {
-    width: 180px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin: 30px 10px 0 45px;
-    border-radius: 3px;
-    background: #868584;
-    float: left;
-    cursor: pointer;
-}
-
-
-/*清除浮动*/
-
-
-/*.module:after {
-    content: ".";
-    clear: both;
-    width: 0;
-    height: 0;
-    display: block;
-    visibility: hidden;
-}
-
-.module li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-.module li:hover {
-    background: #299983;
-    font-weight: bold;
-}*/
-
-.mainbody {
-    width: 1200px;
-}
-
-.container .article {
-    width: 100%;
-    margin: 30px auto;
-    /*修改部分*/
+.blogs_content .content_wrap .article {
     border-radius: 15px;
     text-align: left;
     padding: 20px 10px;
     color: #666666;
     background: #fff;
-    position: relative;
     box-shadow: 1px 1px 1px 1px #ccc;
-}
-
-.container .article:after {
-    content: ".";
-    clear: both;
-    height: 0;
-    display: block;
-    visibility: hidden;
-}
-
-.mainbody:after {
-    content: ".";
-    clear: both;
-    height: 0;
-    display: block;
-    visibility: hidden;
-}
-
-.container {
-    width: 70%;
-    float: left;
-    position: relative;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInLeft;
 }
 
 @keyframes fadeInLeft {
@@ -99,31 +26,7 @@
     }
 }
 
-
-/*.container .left .blogs {
-    width: 100%;
-    /*-webkit-box-shadow: 1px 1px 1px 1px #299983;*/
-
-
-/*border-radius: 15px;
-    text-align: left;
-    padding: 20px 10px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    color: #666666;
-    background: #fff;
-    position: relative;
-    box-shadow: 1px 1px 1px 1px #ccc;
-}*/
-
-
-/*.container .left .blogs:hover {*/
-
-
-/*-webkit-box-shadow: 1px 1px 1px 1px #299983;
-}*/
-
-.container .article .title {
+.blogs_content .article .title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -132,24 +35,24 @@
     text-align: center;
 }
 
-.container .article a {
+.blogs_content .article a {
     text-decoration: none;
     text-align: center;
 }
 
-.container .article #content {
+.blogs_content .article #content {
     margin: 10px auto;
     text-indent: 2em;
     line-height: 28px;
     ;
 }
 
-.container .article #content p {
+.blogs_content .article #content p {
     margin: 16px 0;
     text-indent: 2em;
 }
 
-.container .article .info {
+.blogs_content .article .info {
     margin: 30px;
     padding: 5px;
     text-align: center;
@@ -157,100 +60,10 @@
     border-bottom: 1px dotted #ccc;
 }
 
-.container .article .info span {
+.blogs_content .article .info span {
     margin: 60px;
 }
 
-
-/*.container .left .blogs .read_all {
-    display: block;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-    background: #299983;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-}*/
-
-.container .right {
-    width: 26%;
-    margin: 0px auto;
-    float: right;
-    border-radius: 15px;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-name: fadeInRight;
-    color: #fff;
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.mainbody .right .search {
-    background: #fff;
-    text-align: center;
-    padding: 30px 10px;
-    margin: 20;
-}
-
-.mainbody.right h3 {
-    background: #299983;
-    text-indent: 2em;
-    padding: 5px;
-    margin: 20px;
-    text-align: left;
-}
-
-.mainbody.right .search input {
-    height: 25px;
-    border-radius: 5px;
-}
-
-.mainbody.right .search .button {
-    background: #299983;
-    padding: 0 5px;
-}
-
-.mainbody.right .article_tag div {
-    height: 150px;
-    padding: 10px;
-}
-
-.mainbody .right .blank {
-    height: 200px;
-    padding: 10px;
-}
-
-.mainbody .right .search,
-.article_tag,
-.recent_article,
-.article_save,
-.recent_comments {
-    margin-bottom: 20px;
-    /*overflow: hidden;*/
-    padding-top: 1px;
-    background: #fff;
-    box-shadow: 1px 1px 1px 1px #ccc;
-    border-radius: 15px;
-}
-
-.mainbody .right .search:hover,
-.article_tag:hover,
-.recent_article:hover,
-.article_save:hover,
-.recent_comments:hover {
-    box-shadow: 1px 1px 1px 1px #299983;
+.blogs_content .right {
+    display: inline-block;
 }

@@ -1,38 +1,40 @@
-.blogs_list {
+/*博客发表&编辑页面*/
+
+.blogs_create {
     margin: 20px auto;
     border: 1px solid #ccc;
     padding: 20px 0 20px 20px;
     text-align: center;
 }
 
-.blogs_list h3 {
+.blogs_create h3 {
     color: #299983;
     display: inline-block;
     margin: 10px 0;
 }
 
-.blogs_list form {
+.blogs_create form {
     width: 800px;
     margin: 0 auto;
 }
 
-.blogs_list input {
+.blogs_create input {
     width: 100%;
     margin-top: 20px;
 }
 
-.blogs_list #author {
+.blogs_create#author {
     height: 30px;
 }
 
-.blogs_list textarea {
+.blogs_create textarea {
     width: 100%;
     height: 400px;
     text-indent: 2em;
     margin-top: 20px;
 }
 
-.blogs_list .button {
+.blogs_create .button {
     width: 100px;
     height: 40px;
     background: #299983 !important;
@@ -44,7 +46,7 @@
     margin-left: auto;
 }
 
-.blogs_list #title {
+.blogs_create #title {
     width: 100%;
     height: 12px;
     border: 1px solid #ccc;
@@ -55,7 +57,7 @@
     line-height: 15px;
 }
 
-.blogs_list .content {
+.blogs_create .content {
     width: 400px;
     border: 1px solid #ccc;
     font-size: 18px;
@@ -67,13 +69,13 @@
     text-indent: 2em;
 }
 
-.blogs_list #type {
+.blogs_create #type {
     height: 30px;
     list-style: none;
     margin: 50px 0 0 0;
 }
 
-.blogs_list form #type li {
+.blogs_create form #type li {
     float: left;
     width: 150px;
     line-height: 30px;
@@ -84,53 +86,60 @@
     margin-right: 20px;
 }
 
-form #type li.current {
+.blogs_create #type li.current {
     background: #299983;
     color: white;
 }
 
-form #child {
+.blogs_create #child {
     width: 150px;
     display: none;
     border: 1px solid #ccc;
     margin-top: 20px;
 }
 
-form #child .selected_list {
+.blogs_create #child .selected_list {
     margin-left: 0px;
 }
 
-form #child .selected_list span {
+.blogs_create #child .selected_list span {
     background: #ccc;
     display: block;
     width: 100%;
     padding: 5px 0;
 }
 
-form #child .selected_list span.selectStyle {
+.blogs_create #child .selected_list span.selectStyle {
     background: #299983;
     color: white;
 }
 
-form #child .selected_list div {
+.blogs_create #child .selected_list div {
     padding: 5px;
 }
 
-form #child .selected_list div.current,
+.blogs_create #child .selected_list div.current,
 .selected_list div:hover {
     background: #299983;
     color: white;
 }
 
-.article {
-    margin: 10px auto;
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid #ccc;
+
+/*文章列表页面*/
+
+.blogs_list .blogs_wrap h3 {
+    padding: 30px 0;
 }
 
-.article .title {
+.blogs_list .blogs_wrap .article {
+    margin: 10px auto;
+    width: 30%;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding: 20px 0 30px 0;
+}
+
+.blogs_list .blogs_wrap .article .title {
     color: #299983;
     font-weight: bold;
     font-size: 20px;
@@ -138,11 +147,11 @@ form #child .selected_list div.current,
     text-align: center;
 }
 
-.article .info {
+.blogs_list .blogs_wrap .article .info {
     margin: 10px;
 }
 
-.article .manage .all_content {
+.blogs_list .blogs_wrap .article .manage .all_content {
     display: block;
     margin: 5px;
     font-size: 16px;
@@ -150,7 +159,7 @@ form #child .selected_list div.current,
     color: #000;
 }
 
-.article .manage a {
+.blogs_list .blogs_wrap .article .manage a {
     text-decoration: none;
     color: #299983;
     margin: 5px;
@@ -158,7 +167,7 @@ form #child .selected_list div.current,
     font-size: 16px;
 }
 
-.article .manage a:hover {
+.blogs_list .blogs_wrap .article .manage a:hover {
     background: #299983;
     color: #fff;
 }

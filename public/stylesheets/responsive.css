@@ -699,7 +699,7 @@
     }
     .introduction .left h3 {
         color: #299983;
-        font-size: 36px;
+        font-size: 32px;
         padding: 10px;
         text-align: center;
     }
@@ -768,6 +768,7 @@
         text-align: center;
         letter-spacing: 10px;
         font-weight: 700;
+        font-size: 32px;
     }
     .photos .top .sub_title {
         color: #299983;
@@ -884,6 +885,7 @@
         text-align: left;
         margin: 0 200px;
         margin-top: 30px;
+        font-size: 32px;
     }
     .comment form {
         width: 800px;
@@ -1037,6 +1039,280 @@
     .admin form .button:hover {
         font-weight: bold;
     }
+    /*博客发表&编辑页面*/
+    .blogs_create {
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        padding: 20px 0 20px 20px;
+        text-align: center;
+    }
+    .blogs_create h3 {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 32px;
+    }
+    .blogs_create form {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .blogs_create input {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .blogs_create#author {
+        height: 30px;
+    }
+    .blogs_create textarea {
+        width: 100%;
+        height: 400px;
+        text-indent: 2em;
+        margin-top: 20px;
+    }
+    .blogs_create .button {
+        width: 100px;
+        height: 40px;
+        background: #299983 !important;
+        color: #fff !important;
+        cursor: pointer;
+        border-radius: 5px;
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .blogs_create #title {
+        width: 100%;
+        height: 12px;
+        border: 1px solid #ccc;
+        font-weight: bolder;
+        font-size: 18px;
+        margin-top: 10px;
+        padding: 10px 0;
+        line-height: 15px;
+    }
+    .blogs_create .content {
+        width: 400px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        text-indent: 2em;
+    }
+    .blogs_create #type {
+        height: 30px;
+        list-style: none;
+        margin: 50px 0 0 0;
+    }
+    .blogs_create form #type li {
+        float: left;
+        width: 150px;
+        line-height: 30px;
+        border: 1px solid #ccc;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .blogs_create #type li.current {
+        background: #299983;
+        color: white;
+    }
+    .blogs_create #child {
+        width: 150px;
+        display: none;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+    }
+    .blogs_create #child .selected_list {
+        margin-left: 0px;
+    }
+    .blogs_create #child .selected_list span {
+        background: #ccc;
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .blogs_create #child .selected_list span.selectStyle {
+        background: #299983;
+        color: white;
+    }
+    .blogs_create #child .selected_list div {
+        padding: 5px;
+    }
+    .blogs_create #child .selected_list div.current,
+    .selected_list div:hover {
+        background: #299983;
+        color: white;
+    }
+    /*文章列表页面*/
+    .blogs_list .blogs_wrap {
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+    .blogs_list .blogs_wrap h3 {
+        padding: 30px 0;
+        text-align: center;
+        color: #299983;
+        font-size: 32px;
+    }
+    .blogs_list .blogs_wrap .article {
+        margin: 10px auto;
+        width: 30%;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding: 20px 0 30px 0;
+    }
+    .blogs_list .blogs_wrap .article .title {
+        color: #299983;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    .blogs_list .blogs_wrap .article .info {
+        margin: 10px;
+    }
+    .blogs_list .blogs_wrap .article .manage .all_content {
+        display: block;
+        margin: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+    }
+    .blogs_list .blogs_wrap .article .manage a {
+        text-decoration: none;
+        color: #299983;
+        margin: 5px;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .blogs_list .blogs_wrap .article .manage a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*文章详细页面*/
+    .content_wrap {
+        display: inline-block;
+        position: relative;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+    }
+    .blogs_content .content_wrap .article {
+        border-radius: 15px;
+        text-align: left;
+        padding: 20px 10px;
+        color: #666666;
+        background: #fff;
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .blogs_content .article .title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #299983;
+        cursor: pointer;
+        text-align: center;
+    }
+    .blogs_content .article a {
+        text-decoration: none;
+        text-align: center;
+    }
+    .blogs_content .article #content {
+        margin: 10px auto;
+        text-indent: 2em;
+        line-height: 28px;
+        ;
+    }
+    .blogs_content .article #content p {
+        margin: 16px 0;
+        text-indent: 2em;
+    }
+    .blogs_content .article .info {
+        margin: 30px;
+        padding: 5px;
+        text-align: center;
+        border-top: 1px dotted #ccc;
+        border-bottom: 1px dotted #ccc;
+    }
+    .blogs_content .article .info span {
+        margin: 60px;
+    }
+    .blogs_content .right {
+        display: inline-block;
+    }
+    /*登录注册页面*/
+    .login form {
+        width: 320px;
+        background: #fff;
+        padding: 20px 10px;
+        margin: 150px auto;
+        position: relative;
+    }
+    .login .login form .status {
+        font-size: 24px;
+        color: #AAAAAA;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login form .status a {
+        font-size: 24px;
+        color: #AAAAAA;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .login form .status a.on {
+        color: #299983;
+    }
+    .login form div {
+        width: width;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .login form div input {
+        width: 300px;
+        height: 30px;
+        padding: 5px;
+    }
+    .login form .button {
+        background: #299983;
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+    .login form p {
+        margin: 10px;
+    }
+    .login form p .homepage {
+        color: #299983;
+        text-align: right;
+        float: right;
+    }
+    .login form p .login_err {
+        color: #299983;
+        margin: 10px;
+        text-align: left;
+    }
 }
 
 @media screen and (min-width:120px) and (max-width:999px) {
@@ -1141,26 +1417,6 @@
     header nav li {
         width: 100%;
     }
-    /*.navbar-brand {
-        width: 1.2rem;
-        border-radius: .05rem;
-        height: auto;
-    }
-    header nav a {
-        width: 50%;
-        height: auto;
-        border-radius: .05rem;
-        float: left;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    header nav a {
-        text-decoration: none;
-        color: white;
-        font-size: .18rem;
-        line-height: .50rem;
-        margin-left: .05rem;
-    }*/
     nav a.on,
     nav a.hover,
     nav a:focus {
@@ -1464,10 +1720,11 @@
         height: .02rem;
         border: .02rem;
         background: #666666;
+        margin-top: 0;
     }
     .feeling .wrap {
         margin: 0 auto;
-        margin-left: 1.8rem;
+        margin-left: 2.2rem;
         border-left: .06rem solid #666666;
     }
     .feeling .blogs {
@@ -1527,8 +1784,8 @@
         top: -.1rem;
     }
     .feeling .blogs .dateview {
-        width: 1.4rem;
-        padding: .01rem .15rem;
+        width: 1.8rem;
+        padding: .1rem .15rem;
         font-weight: bold;
         font-size: .16rem;
         border-radius: .4rem 0px .4rem 0px;
@@ -1536,8 +1793,8 @@
         color: #fff;
         text-align: center;
         position: absolute;
-        left: -2.4rem;
-        top: 0.34rem;
+        left: -2.7rem;
+        top: 0.36rem;
         display: block;
     }
     .feeling .blogs .dateview .active {
@@ -1596,6 +1853,7 @@
     }
     .introduction .right {
         width: 100%;
+        display: block;
         margin: .1rem auto;
         border-radius: .15rem;
         animation-fill-mode: both;
@@ -1642,8 +1900,10 @@
         font-weight: 700;
     }
     .photos .top .sub_title {
+        display: inline-block;
         color: #299983;
         font-size: .24rem;
+        margin-bottom: 0;
         float: left;
     }
     .photos button {
@@ -1652,6 +1912,8 @@
         padding: .05rem .1rem;
         text-decoration: none;
         border: .01rem solid #aaaaaa;
+        font-size: .24rem;
+        margin-bottom: 0;
         float: right;
     }
     .photos .upload {
@@ -1855,8 +2117,7 @@
     /*模块管理:*/
     .admin .add {
         margin-left: 1rem;
-        display: block;
-        width: 1.2rem;
+        display: inline-block;
         background: #299983;
         color: #fff;
         padding: .05rem .1rem;
@@ -1910,5 +2171,290 @@
     }
     .admin form .button:hover {
         font-weight: bold;
+    }
+    /*博客发表&编辑页面*/
+    .blogs_create {
+        margin: .1rem auto;
+        border: .01rem solid #ccc;
+        text-align: center;
+    }
+    .blogs_create h3 {
+        color: #299983;
+        display: inline-block;
+        margin: .1rem 0;
+        font-size: .32rem
+    }
+    .blogs_create form {
+        width: 96%;
+        margin: .2rem auto;
+    }
+    .blogs_create input {
+        width: 100%;
+        margin-top: .3rem;
+    }
+    .blogs_create#author {
+        height: .5rem;
+    }
+    .blogs_create textarea {
+        width: 100%;
+        height: 6rem;
+        text-indent: 2em;
+        margin-top: .2rem;
+    }
+    .blogs_create .button {
+        width: 1rem;
+        height: .5rem;
+        background: #299983 !important;
+        color: #fff !important;
+        cursor: pointer;
+        border-radius: .05rem;
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .blogs_create #title {
+        width: 100%;
+        height: .5rem;
+        border: .01rem solid #ccc;
+        font-weight: bolder;
+        font-size: .24rem;
+        margin-top: .1rem;
+        padding: .1rem 0;
+        line-height: .15rem;
+    }
+    .blogs_create .content {
+        width: 4rem;
+        border: .01rem solid #ccc;
+        font-size: .26rem;
+        padding: .01rem;
+        line-height: .3rem;
+        margin-bottom: .3rem;
+        border-radius: .058rem;
+        text-indent: 2em;
+    }
+    .blogs_create #type {
+        height: .5rem;
+        list-style: none;
+        margin: .5rem 0 0 0;
+    }
+    .blogs_create form #type li {
+        float: left;
+        width: 2rem;
+        height: .5rem;
+        line-height: .5rem;
+        border: 1px solid #ccc;
+        text-align: center;
+        border-radius: .05rem;
+        cursor: pointer;
+        border-radius: .05rem;
+        margin-right: .2rem;
+    }
+    .blogs_create #type li.current {
+        background: #299983;
+        color: white;
+    }
+    .blogs_create #child {
+        width: 2.2rem;
+        display: none;
+        border: .01rem solid #ccc;
+        margin-top: .2rem;
+    }
+    .blogs_create #child .selected_list {
+        margin-left: 0px;
+    }
+    .blogs_create #child .selected_list span {
+        background: #ccc;
+        display: block;
+        width: 100%;
+        padding: .05rem 0;
+    }
+    .blogs_create #child .selected_list span.selectStyle {
+        background: #299983;
+        color: white;
+    }
+    .blogs_create #child .selected_list div {
+        padding: .05rem;
+    }
+    .blogs_create #child .selected_list div.current,
+    .selected_list div:hover {
+        background: #299983;
+        color: white;
+    }
+    /*文章列表页面*/
+    .blogs_list .blogs_wrap {
+        margin: 0 auto;
+        border: .01rem solid #ccc;
+    }
+    .blogs_list .blogs_wrap h3 {
+        padding: .3rem 0;
+        text-align: center;
+        color: #299983;
+    }
+    .blogs_list .blogs_wrap .article {
+        margin: .1rem auto;
+        width: 90%;
+        text-align: center;
+        border-top: .01rem solid #ccc;
+        padding: .2rem 0 .3rem 0;
+    }
+    .blogs_list .blogs_wrap .article .title {
+        color: #299983;
+        font-weight: 700;
+        font-size: .3rem;
+        margin: .05rem 0;
+        text-align: center;
+    }
+    .blogs_list .blogs_wrap .article .info {
+        margin: .1rem;
+    }
+    .blogs_list .blogs_wrap .article .manage .all_content {
+        display: block;
+        margin: .05rem;
+        font-size: .26rem;
+        text-decoration: none;
+        color: #000;
+    }
+    .blogs_list .blogs_wrap .article .manage a {
+        text-decoration: none;
+        color: #299983;
+        margin: .05rem;
+        padding: .05rem;
+        font-size: .26rem;
+    }
+    .blogs_list .blogs_wrap .article .manage a:hover {
+        background: #299983;
+        color: #fff;
+    }
+    /*文章详细内容移动端样式*/
+    .content_wrap {
+        position: relative;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: fadeInLeft;
+    }
+    .blogs_content .content_wrap .article {
+        border-radius: .15rem;
+        text-align: left;
+        padding: .2rem .1rem;
+        color: #666666;
+        background: #fff;
+        box-shadow: 1px 1px 1px 1px #ccc;
+    }
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .blogs_content .article .title {
+        font-size: .34rem;
+        font-weight: bold;
+        margin-bottom: .2rem;
+        color: #299983;
+        cursor: pointer;
+        text-align: center;
+    }
+    .blogs_content .article a {
+        text-decoration: none;
+        text-align: center;
+    }
+    .blogs_content .article #content {
+        margin: .1rem auto;
+        text-indent: 2em;
+        line-height: 1.5;
+        font-size: .24rem;
+    }
+    .blogs_content .article #content h3 {
+        margin: .16rem 0;
+        text-indent: 2em;
+        font-size: .32rem;
+        font-weight: 700;
+    }
+    .blogs_content .article img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .blogs_content .article .info {
+        margin: .1rem;
+        padding: .05rem;
+        text-align: center;
+        border-top: .01rem dotted #ccc;
+        border-bottom: .01rem dotted #ccc;
+        font-size: .28rem;
+    }
+    .blogs_content .article .info span {
+        margin: .1rem;
+    }
+    .blogs_content .right {
+        display: none;
+    }
+    /*登录注册移动端样式*/
+    .login form {
+        width: 90%;
+        background: #fff;
+        padding: .4rem .1rem;
+        margin: .5rem auto;
+        position: relative;
+    }
+    .login .login form .status {
+        font-size: .36rem;
+        color: #AAAAAA;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login form .status a {
+        font-size: .4rem;
+        color: #AAAAAA;
+        font-weight: bold;
+        padding: .1rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .login form .status a.on {
+        color: #299983;
+    }
+    .login form div {
+        width: width;
+        margin: .3rem auto;
+        text-align: center;
+    }
+    .login form div input {
+        width: 6rem;
+        height: .6rem;
+        padding: .05rem;
+    }
+    .login form .button {
+        background: #299983;
+        width: 6rem;
+        height: .6rem;
+        line-height: .3rem;
+        font-weight: bold;
+        color: #fff;
+        font-size: .2rem;
+        border-radius: .05rem;
+        cursor: pointer;
+        border: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .login form p {
+        margin: .1rem;
+    }
+    .login form p .homepage {
+        color: #299983;
+        text-align: right;
+        float: right;
+    }
+    .login form p .login_err {
+        color: #299983;
+        margin: .1rem;
+        text-align: left;
     }
 }

@@ -2,33 +2,53 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
+        博客编辑
     </title>
-    <link rel='stylesheet' href='/stylesheets/article.css' />
     <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+    <script src="/javascripts/aside.js"></script>
     <script src="/wangEditor/js/wangEditor.min.js"></script>
-    <link rel="stylesheet" href="/wangEditor/css/wangEditor.css" />
+
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
+    <link rel="stylesheet" href="/wangEditor/css/wangEditor.css">
+
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody blogs_create">
+                <form method="post" action="/article/modify" class="create">
+                    <ul id="type">
 
-        <form method="post" action="/article/modify" class="create">
-            <ul id="type">
+                    </ul>
 
-            </ul>
-
-            <div id="child">
+                    <div id="child">
+                        <div class="selected_list">
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" id="id_hidden" value="" />
+                    <input type="hidden" name="type" id="type_hidden" value="" />
+                    <input placeholder="作者" type="text" name="author" id="author" />
+                    <input placeholder="文章标题" type="text" name="title" id="title" />
+                    <textarea name="content" id="content" placeholder="输入文章内容"></textarea>
+                    <input type="submit" class="button" />
+                </form>
             </div>
-            <input type="hidden" name="id" id="id_hidden" value="" />
-            <input type="hidden" name="type" id="type_hidden" value="" />
-            <input placeholder="作者" type="text" name="author" id="author" />
-            <input placeholder="文章标题" type="text" name="title" id="title" />
-            <textarea name="content" id="content" placeholder="输入文章内容"></textarea>
-            <input type="submit" class="button" />
-        </form>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>
 <script src="/javascripts/modify.js"></script>
+<script src="/javascripts/article.js"></script>

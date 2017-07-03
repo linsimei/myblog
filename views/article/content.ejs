@@ -1,43 +1,67 @@
 <html>
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
     <title>
-        博客列表
+        博客内容
     </title>
-    <link rel='stylesheet' href='/stylesheets/content.css' />
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/vuejs/vue.js"></script>
+    <script src="/javascripts/aside.js"></script>
+    <link rel='stylesheet' href='/stylesheets/responsive.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel='stylesheet' href='/stylesheets/common.css' />
     <link rel="stylesheet" href="/wangEditor/css/wangEditor.css">
+
+
 </head>
 
 <body>
-    <%- include ../header.ejs %>
-        <div class="mainbody">
+    <div class="container">
+        <%- include ../header.ejs %>
+            <div class="row mainbody blogs_content clear">
+                <div class="col-lg-9 col-md-9 col-sm-12 ">
+                    <div class="left content_wrap">
+                        <div class="article">
+                            <div class="title">
+                                <%= article.title %>
+                            </div>
+                            <div class="info"> <span>发布时间:
+                         <%= article.submitTime.format('yyyy-MM-dd') %></span><span>作者:<%- article.author %></span> <span>浏览量：<%- article.views %></span>
+                            </div>
+                            <div id="content">
+                                <%- article.content %>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="container">
-                <div class="article">
-                    <div class="title">
-                        <%= article.title %>
-                    </div>
-                    <div class="info"> <span>发布时间:
-                <%= article.submitTime.format('yyyy-MM-dd')  %>
-                  </span><span>作者:<%- article.author %></span> <span>浏览量：<%- article.views %></span>
-                    </div>
-                    <div id="content">
-                        <%- article.content %>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <%- include ../aside.ejs %>
                     </div>
                 </div>
-                <div id="share"></div>
-                <div class="article_comments">
+
+
+                <div id="share">
+
+                </div>
+                <!--<div class="article_comments">
                     <textarea rows="" cols="" palcesholder="评论一下文章吧..."></textarea>
                     <div class="face">
 
                     </div>
                     <input type="submit" name="" value="畅言一下">
 
-                </div>
-
+                </div>-->
             </div>
-        </div>
-        <%- include ../footer.ejs %>
+            <%- include ../footer.ejs %>
+    </div>
 </body>
 
 </html>
