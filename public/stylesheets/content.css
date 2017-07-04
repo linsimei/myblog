@@ -44,7 +44,7 @@
     margin: 10px auto;
     text-indent: 2em;
     line-height: 28px;
-    ;
+    word-wrap: break-word;
 }
 
 .blogs_content .article #content p {

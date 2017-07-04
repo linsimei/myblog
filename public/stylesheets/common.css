@@ -1,130 +1,133 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-@media screen and (min-width:320px) and (max-width:359px) {
-    /*苹果4-5*/
-    html {
-        font-size: 44.444444px !important;
+    * {
+        margin: 0;
+        padding: 0;
     }
-}
-
-@media screen and (min-width:360px) and (max-width:374px) {
-    /*安卓 3星*/
-    html {
-        font-size: 50px !important;
+    
+    @media screen and (min-width:320px) and (max-width:359px) {
+        /*苹果4-5*/
+        html {
+            font-size: 44.444444px !important;
+        }
     }
-}
-
-@media screen and (min-width:375px) and (max-width:413px) {
-    /*苹果6*/
-    html {
-        font-size: 52.083333333333px !important;
+    
+    @media screen and (min-width:360px) and (max-width:374px) {
+        /*安卓 3星*/
+        html {
+            font-size: 50px !important;
+        }
     }
-}
-
-@media screen and (min-width: 414px) and (max-width: 479px) {
-    /*苹果 PLUS*/
-    html {
-        font-size: 57.5px !important;
+    
+    @media screen and (min-width:375px) and (max-width:413px) {
+        /*苹果6*/
+        html {
+            font-size: 52.083333333333px !important;
+        }
     }
-}
-
-@media screen and (min-width:480px) and (max-width:539px) {
-    /*苹果 4横屏模式&安卓屏幕*/
-    html {
-        font-size: 66.666667px !important;
+    
+    @media screen and (min-width: 414px) and (max-width: 479px) {
+        /*苹果 PLUS*/
+        html {
+            font-size: 57.5px !important;
+        }
     }
-}
-
-@media screen and (min-width:540px) and (max-width:639px) {
-    /*安卓横屏*/
-    html {
-        font-size: 75px !important;
+    
+    @media screen and (min-width:480px) and (max-width:539px) {
+        /*苹果 4横屏模式&安卓屏幕*/
+        html {
+            font-size: 66.666667px !important;
+        }
     }
-}
-
-@media screen and (min-width:640px) and (max-width:719px) {
-    /*安卓横屏*/
-    html {
-        font-size: 88.88888888889px !important;
+    
+    @media screen and (min-width:540px) and (max-width:639px) {
+        /*安卓横屏*/
+        html {
+            font-size: 75px !important;
+        }
     }
-}
-
-@media only screen and (min-width: 720px) {
-    /*安卓横屏*/
-    html {
-        font-size: 100px !important;
+    
+    @media screen and (min-width:640px) and (max-width:719px) {
+        /*安卓横屏*/
+        html {
+            font-size: 88.88888888889px !important;
+        }
     }
-}
-
-.avatar {
-    width: 100%;
-    text-align: center;
-}
-
-.avatar i {
-    display: inline-block;
-}
-
-.avatar i img {
-    width: 100%;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-body {
-    font: 14px "Microsoft Yahei", Arial, Helvetica, sans-serif;
-    background: #efedee;
-    font-size: 14px;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.mainbody .col-lg-9,
-.mainbody .col-md-9,
-.mainbody .col-sm-12,
-.mainbody .col-lg-3,
-.mainbody .col-md-3 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-a {
-    color: #299983;
-    text-decoration: none
-}
-
-a:focus,
-a:hover {
-    color: #299983;
-}
-
-a:focus {
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
-}
-
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-li {
-    list-style: none;
-}
-
-h3 {
-    font-size: 32px;
-}
+    
+    @media only screen and (min-width: 720px) {
+        /*安卓横屏*/
+        html {
+            font-size: 100px !important;
+        }
+    }
+    
+    .avatar {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .avatar i {
+        display: inline-block;
+    }
+    
+    .avatar i img {
+        width: 100%;
+    }
+    
+    .container {
+        margin: 0 auto;
+        /*display: flex;
+        flex-direction: column;
+        min-height: 100%;*/
+    }
+    
+    body {
+        font: 14px "Microsoft Yahei", Arial, Helvetica, sans-serif;
+        background: #efedee;
+        font-size: 14px;
+    }
+    
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .mainbody .col-lg-9,
+    .mainbody .col-md-9,
+    .mainbody .col-sm-12,
+    .mainbody .col-lg-3,
+    .mainbody .col-md-3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a {
+        color: #299983;
+        text-decoration: none
+    }
+    
+    a:focus,
+    a:hover {
+        color: #299983;
+    }
+    
+    a:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px
+    }
+    
+    .clear:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
