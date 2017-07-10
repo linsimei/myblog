@@ -95,9 +95,9 @@
                     header #header .avatar img {
                         width: 100%;
                         /*max-width: 100%;
-        height: auto;
-        display: block;
-        margin-top: 25px;*/
+                          height: auto;
+                          display: block;  
+                            margin-top: 25px;*/
                         border-radius: 50%;
                         margin: 0px auto;
                         text-align: center;
@@ -329,6 +329,8 @@
                         text-align: left;
                         overflow: hidden;
                         color: #666666;
+                        text-overflow: ellipsis;
+                        /*white-space: nowrap;*/
                     }
                     .left .bloglist .blogs a {
                         display: block;
@@ -539,6 +541,8 @@
                         margin-bottom: 50px;
                         overflow: hidden;
                         text-align: left;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                     .container .left .blogs .info span {
                         margin: 10px;
