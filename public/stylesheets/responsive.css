@@ -262,12 +262,7 @@
                         text-align: center;
                         color: #fff;
                     }
-                    /* .left .bloglist h3 span {
-        color: #299983;
-        text-align: center;
-    }
-    */
-                    .left .bloglist h4 {
+                       .left .bloglist h4 {
                         font-weight: bold;
                         color: #fff;
                         background: #299983;
@@ -292,10 +287,10 @@
                     .left .bloglist .blogs:hover {
                         box-shadow: 1px 1px 1px 1px #299983;
                     }
-                    .left .bloglist .blogs .content {
+                    /* .left .bloglist .blogs .content {
                         height: 56px;
                         overflow: hidden;
-                    }
+                    } */
                     .blogs .dateview {
                         display: block;
                         width: 130px;
@@ -324,14 +319,25 @@
                         top: 28px;
                     }
                     .left .bloglist .blogs div {
-                        text-indent: 2em;
-                        margin: 10px 15px;
+                         text-indent: 2em;
+                         margin: 10px 15px; 
                         text-align: left;
-                        overflow: hidden;
+                        height:64px;
+                        line-height: 1.5;
+                        font-size: 14px;
                         color: #666666;
-                        text-overflow: ellipsis;
-                        /*white-space: nowrap;*/
-                    }
+                        overflow: hidden;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: box;
+                        -webkit-box-orient: vertical;
+                        -moz-box-orient: vertical;
+                        box-orient: vertical;
+                        -webkit-line-clamp: 3;
+                        -moz-line-clamp: 3;
+                        line-clamp: 3;
+                                                                               
+	                    }
                     .left .bloglist .blogs a {
                         display: block;
                         width: 100px;
@@ -517,11 +523,24 @@
                         text-decoration: none;
                     }
                     .left .blogs .content {
-                        height: 60px;
+                        height: 64px;
                         margin: 10px;
+                         font-size: 14px;
+                        line-height: 1.5;
                         margin-bottom: 50px;
                         overflow: hidden;
                         text-align: left;
+                        -webkit-line-clamp:3;
+                        -moz-line-clamp:3;
+                        -line-clamp:3;
+                        display: box;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        box-orient:vertical;
+                        -webkit-box-orient: vertical;
+                        -moz-box-orient: vertical;
+                        color: #666666;
+                
                     }
                     .container .left .blogs .info span {
                         margin: 10px;
@@ -1522,12 +1541,7 @@
                         text-align: center;
                         color: #fff;
                     }
-                    /* .left .bloglist h3 span {
-        color: #299983;
-        text-align: center;
-    }
-    */
-                    .container-fluid .navbar-header a {
+           .container-fluid .navbar-header a {
                         height: 30px;
                     }
                     .left .bloglist h4 {
@@ -1557,13 +1571,24 @@
                     }
                     .left .bloglist .blogs .content {
                         font-size: 0.24rem;
-                        height: 1.44rem;
+                        height: 1.8rem;
                         text-indent: 2em;
                         margin: .01rem .15rem;
                         text-align: left;
                         overflow: hidden;
                         color: #666666;
+                        line-height: 1.5;
                         margin-bottom: .2rem;
+                        display: box;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        box-orient:vertical;
+                        -moz-box-orient-:vertical;
+                        -webkit-box-orient-:vertical;
+                        line-clamp:4;
+                        -moz-line-clamp-:4;
+                        -webkit-line-clamp:4;
+
                     }
                     .left .bloglist .blogs a {
                         display: block;
@@ -1682,11 +1707,30 @@
                         text-decoration: none;
                     }
                     .left .blogs .content {
-                        height: .8rem;
+                        height: 1.8rem;
                         margin: .15rem;
                         margin-bottom: .5rem;
-                        overflow: hidden;
+                        font-size: 0.24rem;
+                         text-indent: 2em;
+
+
+                         
+                        margin: .01rem .15rem;
                         text-align: left;
+                        overflow: hidden;
+                        color: #666666;
+                        line-height: 1.5;
+                        display: box;
+                        display: -webkit-box;
+                        display: -moz-box;
+                        box-orient:vertical;
+                        -moz-box-orient-:vertical;
+                        -webkit-box-orient-:vertical;
+                        line-clamp:4;
+                        -moz-line-clamp-:4;
+                        -webkit-line-clamp:4;
+
+                        
                     }
                     .container .left .blogs .info span {
                         margin: .1rem;

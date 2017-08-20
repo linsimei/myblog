@@ -10,7 +10,10 @@ router.get('/', function(req, res, next) {
     type.find(function(err, items) {
         for (var i = 0; i < items.length; i++) {
             if (items[i].parent) {
-                items[i].parent = items.find(x => x.id === items[i].parent).name;
+                var parent= items.find(x => x.id === items[i].parent);
+                if(parent){
+                    items[i].parent = parent.name;
+                }
             }
         }
         res.render('type/list', { types: items });

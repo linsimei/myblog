@@ -17,7 +17,6 @@ router.get("/type", function (req, res, next) {
         if (parent) {
             type.find({ parent: parent._id }, function (err, children) {
                 res.json(children);
-
             });
         }
     })
@@ -27,19 +26,22 @@ router.get("/type", function (req, res, next) {
 router.get("/get_articles", function (req, res, next) {
     var id = req.query.id;
     type.findOne({ name: "前端" }, function (err, parent) {
-        type.find({ parent: parent._id }, function (err, children) {
-            var child_ids = children.map(x => x._id);
-            if (id) {
-                article.find({ type: id }, function (err, articles) {
-                    res.json(articles);
-                })
-            } else {
-                article.find({ type: child_ids }, function (err, articles) {
-                    res.json(articles);
-                })
-            }
+        if (parent) {
+            type.find({ parent: parent._id }, function (err, children) {
+                var child_ids = children.map(x => x._id);
+                if (id) {
+                    article.find({ type: id }, function (err, articles) {
+                        res.json(articles);
+                    })
+                } else {
+                    article.find({ type: child_ids }, function (err, articles) {
+                        res.json(articles);
+                    })
+                }
 
-        });
+            });
+        }
+
 
     })
 })
